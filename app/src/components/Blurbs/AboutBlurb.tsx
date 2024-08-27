@@ -34,7 +34,7 @@ export default function AboutBlurb() {
           objectFit="cover"
           h="70vh"
           w="30vw"
-          src="/images/white.png"
+          src="/images/snailmail/og_eboard.png"
           borderTopRadius={"46%"}
         />
       </GridItem>
@@ -56,16 +56,13 @@ export default function AboutBlurb() {
           src="/images/star_divider.png"
         />
         <Text variant="subtitle" w="50%" color="white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+        We’re a community celebrating the art of handwritten letters, journaling, scrapbooking, etc.
+        We foster artistic creativity, reflection, and wellness by holding community events and meetings. 
+        Snail Mail provides equitable access to bullet journaling, letter-writing, and scrapbooking supplies for all.
+
           <br></br>
           <br></br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          We hold weekly meetings on Mondays from 7-9 PM in Friedman 101, open to all students at Brown and RISD. Come join us!
         </Text>
         <Button
           variant="solid"

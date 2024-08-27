@@ -31,16 +31,13 @@ export default function MerchBlurb() {
           merch !
         </Text>
         <Text variant="subtitle" color="#6D5B51" w="50%">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Exciting news! We have official Snail Mail merch! Share your love of Snail Mail with our custom sweaters!! 
           <br></br>
           <br></br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          These are LIMITED EDITION, so grab one before we sell out!
+          The design is hand-drawn by one of our Art Directors, Sienna Lew, 
+          and features a bullet journaling/scrapbooking spread on the back, 
+          and a Snail Mail x Brown logo in the front! 
         </Text>
       </GridItem>
       <GridItem
@@ -53,7 +50,7 @@ export default function MerchBlurb() {
           objectFit="cover"
           h="25rem"
           w="35rem"
-          src="/images/white.png"
+          src="/images/snailmail/merch_1.png"
         />
       </GridItem>
     </Grid>

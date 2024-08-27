@@ -14,6 +14,7 @@ import {
 
 interface EboardInfoProps{
   name: string;
+  position: string,
   bio: string;
   pic: string;
 };
@@ -32,10 +33,10 @@ export default function EboardBio(props: EboardInfoProps) {
       >
         <Image
           objectFit="cover"
-          h="50%"
           w="50%"
           src={props.pic}
           borderRadius={"1rem"}
+          aspectRatio={1 / 1}
         />
         <CardBody
           alignItems={"flex-start"}
@@ -45,6 +46,9 @@ export default function EboardBio(props: EboardInfoProps) {
         >
           <Text variant={"tinyHeaderTitle"} color="#6F6F6F">
             {props.name}
+          </Text>
+          <Text variant={"tinyHeader"} color="#6F6F6F">
+            {props.position}
           </Text>
           <Text variant={"subtitle"} py="8" color="#6F6F6F">
             {props.bio}

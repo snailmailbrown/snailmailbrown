@@ -57,10 +57,8 @@ export default function Title() {
           textAlign={"justify"}
           w="90%"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          We are a community of students who love stationery, journaling, and 
+          letter-writing at Brown University! Come join us at one of our weekly meetings Mondays 7-9pm in Friedman 101 :D
         </Text>
       </GridItem>
       <GridItem area={"right"} alignItems={"center"} justifyContent="center">

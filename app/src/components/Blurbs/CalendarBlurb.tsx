@@ -29,7 +29,7 @@ export default function CalendarBlurb() {
           objectFit="cover"
           h="30rem"
           w="40rem"
-          src="/images/grey.png"
+          src="/images/snailmail/social_1.png"
         />
       </GridItem>
       <GridItem
@@ -43,16 +43,11 @@ export default function CalendarBlurb() {
           meetings <br></br>+ events
         </Text>
         <Text variant="subtitle" color="#303030" w="50%" mb="2rem">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          We have lots of exciting events planned for you this year!
+          Be sure to save the date, so you don't miss out on the fun!
           <br></br>
           <br></br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          *Updated calendar coming soon!*
         </Text>
         <Button variant="solid" bg="#303030" color="white">
           Add to calendar

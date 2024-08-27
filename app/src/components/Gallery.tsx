@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, Grid, GridItem, Image, Flex, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, IconButton } from "@chakra-ui/react";
+import { Text, Link, Grid, GridItem, Image, Flex, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, IconButton } from "@chakra-ui/react";
 import Eboard from "./Eboard";
 import { gallery } from "../info/galleryinfo";
 import { HiX } from "react-icons/hi";
@@ -23,6 +23,9 @@ export default function Gallery() {
         </Text>
         <Text variant="subtitle" color="#5F6061">
           ( click to expand a picture! )
+        </Text>
+        <Text variant="subtitle" color="#5F6061">
+          follow us on instagram <Link variant="pageLink" href="https://www.instagram.com/snailmailbrown?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@snailmailbrown</Link> to see even more!
         </Text>
       </Flex>
       <Grid templateColumns="repeat(3, 1fr)" gap={8} w="65%" my="2rem">

@@ -101,13 +101,25 @@ const components = {
           textDecoration: "none"
         },
       }),
+      pageLink: () => ({
+        fontFamily: fonts.subtitle,
+        fontSize: ".6rem",
+        letterSpacing: ".05rem",
+        fontWeight: "600",
+        paddingX: ".05rem",
+        color: "#B1C5EC",
+        _hover: {
+          color: "#303030",
+          textDecoration: "none"
+        },
+      }),
     },
   },
   Text: {
     variants: {
       subtitle: () => ({
         fontFamily: fonts.subtitle,
-        fontSize: ".6rem",
+        fontSize: ".7rem",
         textAlign: "justify",
       }),
       subtitleCondense: () => ({

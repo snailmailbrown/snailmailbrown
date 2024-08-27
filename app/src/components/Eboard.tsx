@@ -61,6 +61,7 @@ export default function About() {
       >
         <EboardBio
           name={eboardMembers[activeMember].name}
+          position={eboardMembers[activeMember].position}
           bio={eboardMembers[activeMember].bio}
           pic={eboardMembers[activeMember].pic}
         />
