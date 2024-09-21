@@ -10,7 +10,7 @@ type EboardInfo = {
 const eboardMembers: EboardInfo[] = [
   {
     name: "anna le",
-    position: "HIIII",
+    position: "president/co-website development",
     bio: "Hi! My name is Anna, and I'm from good ol’ Georgia (sweet tea has my heart <3). I'm concentrating in computer science and have always loved scrapbooking and documenting memories. I am so grateful to have found this Snail Mail family, and I hope other students find joy and comfort in our community, too. You can find me browsing on Etsy for cute stickers, crocheting, or in the CIT coding. I also love reading, boba, and good eats :D I’m excited to see what's in store for Snail Mail’s future!",
     pic: "/images/eboard/anna_le.jpg",
     smallpic: "/images/eboard/anna_le.jpg",
