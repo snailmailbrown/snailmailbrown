@@ -9,8 +9,11 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { HiArrowCircleRight } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 export default function MerchBlurb() {
+  const navigate = useNavigate();
+
   return (
     <Grid
       templateAreas={`"left right"`}
@@ -39,6 +42,15 @@ export default function MerchBlurb() {
           and features a bullet journaling/scrapbooking spread on the back, 
           and a Snail Mail x Brown logo in the front! 
         </Text>
+        <Button
+          variant="solid"
+          color="white"
+          bg="#6D5B51"
+          m="2rem"
+          onClick={() => navigate("/merch")}
+        >
+          Check it out!
+        </Button>
       </GridItem>
       <GridItem
         area={"right"}

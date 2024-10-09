@@ -92,6 +92,10 @@ export default function Gallery() {
               borderTop={"2px solid #D9D9D9"}
               borderBottom={"2px solid #D9D9D9"}
               backgroundImage={gallery[expand]?.pic}
+              backgroundSize={"contain"}
+              backgroundRepeat={"no-repeat"}
+              backgroundPosition={"center"}
+              backgroundColor={"rgba(230, 243, 255, 0.9)"}
             ></GridItem>
             <GridItem
               area={"right"}

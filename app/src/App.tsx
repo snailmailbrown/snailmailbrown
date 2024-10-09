@@ -9,6 +9,7 @@ import customTheme from "./styles/theme";
 import About from "./components/About";
 import Fonts from "./styles/fonts";
 import Gallery from "./components/Gallery";
+import Merch from "./components/Merch";
 
 export const App = () => (
   <ChakraProvider theme={customTheme}>
@@ -19,6 +20,7 @@ export const App = () => (
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/merch" element={<Merch />} />
       </Routes>
     </BrowserRouter>
   </ChakraProvider>

@@ -37,10 +37,14 @@ export default function About() {
             Beginnings
           </Text>
           <Text variant="subtitleCondense" color="#6F6F6F">
-            Snail Mail started as a silly little idea from our founder, 
-            Emily Sun, who wished there was a journaling community at Brown. 
-            Together with an extremely creative and dedicated team, they brought 
-            her dream to life with Snail Mail @ Brown!
+            Snail Mail started during the pandemic, when there was a need for community and 
+            a space to relax while making friends on campus. It started as just one letter 
+            (from Emily’s mailbox to Jess’ mailbox in page-rob)🐌📬, then turned into a 
+            full-blown effort to promote letter-writing, bullet journaling, and love for 
+            stationery on Brown’s campus! 
+            <br></br>
+            <br></br>
+            Together with an extremely creative and dedicated team, Emily's vision was brought to life with Snail Mail @ Brown!
           </Text>
         </Flex>
         <Flex flexDir={"column"} w="25%" alignItems={"center"}>
@@ -62,12 +66,13 @@ export default function About() {
             Mission
           </Text>
           <Text variant="subtitleCondense" color="#6F6F6F">
-          The purpose of Snail Mail @ Brown is to create a space for community, 
-          reflection, and creativity through snail mail, letter- writing, and 
-          stationery. Snail Mail @ Brown celebrates traditional methods of 
-          communication by holding bullet journaling and letter-writing sessions. 
+            The purpose of Snail Mail @ Brown is to create a space for community, 
+            reflection, and creativity through snail mail, letter- writing, and 
+            stationery. Snail Mail @ Brown celebrates traditional methods of 
+            communication by holding bullet journaling and letter-writing sessions. 
             <br></br>
-            <br></br>Snail Mail @ Brown ensures equitable access to letter writing, 
+            <br></br>
+            Snail Mail @ Brown ensures equitable access to letter writing, 
             scrapbooking, calligraphy, etc. by providing stationery supplies and 
             holding workshops, with themed events during holidays.
           </Text>

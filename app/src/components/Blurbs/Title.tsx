@@ -9,8 +9,11 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { HiArrowCircleRight } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 export default function Title() {
+  const navigate = useNavigate();
+
   return (
     <Grid
       templateAreas={`"left right"`}
@@ -48,6 +51,7 @@ export default function Title() {
           w="90%"
           mb="1rem"
           rightIcon={<HiArrowCircleRight size={"2.5rem"} color={"#8EA6D5"} />}
+          onClick={() => navigate("/listserv")}
         >
           Subscribe to our Listserv
         </Button>
