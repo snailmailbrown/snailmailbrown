@@ -79,7 +79,7 @@ const gallery: GalleryInfo[] = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    pic: "/images/snailmail/social_3.jpg",
+    pic: "/images/snailmail/social_3.png",
     title: "Tote Bag Painting",
     caption:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -109,7 +109,7 @@ const gallery: GalleryInfo[] = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    pic: "/images/snailmail/social_4.jpg",
+    pic: "/images/snailmail/social_4.png",
     title: "End of Year Social 2023",
     caption:
       "With so many events over the school year came soooooo many stickers. Too many. Actually, that’s a lie. You can never have too many stickers. However, with finals rounding the corner, we got our Snails together for a fun night of tote bag painting, boba, and sticker giveaways! Our final event of the year was filled with laughter, creativity, socializing between snails, and a couple of freebies for our Snail Mail community <3.",

@@ -48,7 +48,7 @@ const eboardMembers: EboardInfo[] = [
     position: "social media chair",
     bio: "Hi, my name is Srishti. I’m planning to concentrate in biochem, and I’m from Seattle, Washington. I am a huge stationery collector/hoarder, and you can always find me watching JetPens and AmandaRachLee videos. I am so grateful to have found a family of fellow journaling and stationery enthusiasts within Snail Mail, and I am excited to see our club grow even more! When I’m not at Snail Mail, I love baking, playing board games, and trying new cuisines!",
     pic: "/images/eboard/srishti_sankaran.jpg",
-    smallpic: "/images/eboard/srishti_sankaran.jpg",
+    smallpic: "/images/eboard/srishti_sankaran.png",
   },
   {
     name: "kiara ibanez",
@@ -69,7 +69,7 @@ const eboardMembers: EboardInfo[] = [
     position: "communications chair",
     bio: "Hii! My name is Wen and I’m from a casual suburb in Florida. I’m currently concentrating in biology. I love making cards, writing letters, hoarding stickers, and crafting. I also love to make and share origami, it is my favorite little gift to give. Besides Snail Mail, I like to play tennis (very rusty), paint, crochet, spend time with friends, and wrestle alligators in my backyard. Hope to see everyone at Snail Mail!",
     pic: "/images/eboard/wen_yang.heic",
-    smallpic: "/images/eboard/wen_yang.heic",
+    smallpic: "/images/eboard/wen_yang.png",
   },
   {
     name: "miranda gonzales",

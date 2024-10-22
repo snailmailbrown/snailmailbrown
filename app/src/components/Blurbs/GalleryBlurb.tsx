@@ -14,12 +14,12 @@ import { useNavigate } from "react-router-dom";
 
 
 const samplepics = [
-  "/images/snailmail/social_4.jpg",
+  "/images/snailmail/social_4.png",
   "/images/snailmail/eboard_social_2.jpeg",
   "/images/snailmail/memory_box.jpg",
   "/images/snailmail/activity_fair.jpg",
   "/images/snailmail/spring_social_2.jpg",
-  "/images/snailmail/social_3.jpg",
+  "/images/snailmail/social_3.png",
 ];
 export default function GalleryBlurb() {
     const [index, setIndex] = useState(1)
