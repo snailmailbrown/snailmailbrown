@@ -13,7 +13,7 @@ import { HiArrowCircleRight } from "react-icons/hi";
 export default function Merch() {
   return (
     <Grid
-      h="93vh"
+      h="100vh"
       w="100vw"
       p="20px"
       alignItems={"center"}

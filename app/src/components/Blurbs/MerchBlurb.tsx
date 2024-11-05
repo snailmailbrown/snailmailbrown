@@ -17,11 +17,11 @@ export default function MerchBlurb() {
   return (
     <Grid
       templateAreas={`"left right"`}
-      gridTemplateColumns={"1fr 1fr"}
+      gridTemplateColumns={"2fr 3fr"}
       h="93vh"
       w="100vw"
       alignItems={"center"}
-      bg="#FFEEDA"
+      bg="#8EA6D5"
     >
       <GridItem
         area={"left"}
@@ -30,22 +30,21 @@ export default function MerchBlurb() {
         justifyContent="center"
         flexDir={"column"}
       >
-        <Text variant="subHeader" color="#6D5B51">
+        <Text variant="subHeader" color="white">
           merch !
         </Text>
-        <Text variant="subtitle" color="#6D5B51" w="50%">
+        <Text variant="subtitle" color="white" w="50%">
           Exciting news! We have official Snail Mail merch! Share your love of Snail Mail with our custom sweaters!! 
           <br></br>
           <br></br>
           These are LIMITED EDITION, so grab one before we sell out!
-          The design is hand-drawn by one of our Art Directors, Sienna Lew, 
-          and features a bullet journaling/scrapbooking spread on the back, 
-          and a Snail Mail x Brown logo in the front! 
+          The design is hand-drawn by one of our Art Directors, Kendra Eastep, 
+          and Kiara Anderson and features an adorable heart stamp design!
         </Text>
         <Button
           variant="solid"
-          color="white"
-          bg="#6D5B51"
+          color="#77A3CD"
+          bg="white"
           m="2rem"
           onClick={() => navigate("/merch")}
         >
@@ -60,9 +59,19 @@ export default function MerchBlurb() {
       >
         <Image
           objectFit="cover"
-          h="25rem"
-          w="35rem"
-          src="/images/snailmail/merch_1.png"
+          h="30rem"
+          w="25rem"
+          margin="10px"
+          src="/images/snailmail/sweatshirt_back.png"
+          borderRadius="2%"
+        />
+        <Image
+          objectFit="cover"
+          h="30rem"
+          w="30rem"
+          margin="10px"
+          src="/images/snailmail/tote_bag.png"
+          borderRadius="2%"
         />
       </GridItem>
     </Grid>

@@ -37,13 +37,17 @@ export default function GalleryBlurb() {
 
     function forward(){
         setIndex(index + 1)
-        if (index >= samplepics.length) setIndex(0)
+        if (index >= samplepics.length) {
+          setIndex(0)
+        }
         console.log('done:' + index)
         setChanged(isChanged + 1)
     }
     function backward() {
       setIndex(index - 1);
-      if (index < 0) setIndex(samplepics.length - 1);
+      if (index < 0) {
+        setIndex(samplepics.length - 1);
+      }
       setChanged(isChanged - 1);
     }
 

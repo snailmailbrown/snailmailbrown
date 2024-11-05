@@ -14,10 +14,10 @@ import { HiArrowCircleRight } from "react-icons/hi";
 export default function Merch() {
   return (
     <Grid
-      h="93vh"
+      h="50vh"
       w="100%"
       p="20px"
-      alignItems={"center"}
+      alignItems={"bottom"}
       justifyContent={"center"}
       display={"flex"}
     >
@@ -33,7 +33,7 @@ export default function Merch() {
           <br></br>
         </Text>
         <Text variant="subtitle" align="center" color="#5F6061">
-          fill out this <Link variant="pageLink" href="https://docs.google.com/forms/d/e/1FAIpQLSf7K6ojzzQQ11duDXryYFRMI-9JgzODKWjRD_0CBF_gMuYrRQ/viewform">merch interest form</Link> to let us know what you want to see !
+          fill out this <Link variant="pageLink" href="https://docs.google.com/forms/d/e/1FAIpQLSdpR0cBX9r327UmPeow4VZltVHupOYSSQthz8dte6GVtP8Lxg/viewform">pre-order form</Link> to get yours now !
         </Text>
       </GridItem>
       

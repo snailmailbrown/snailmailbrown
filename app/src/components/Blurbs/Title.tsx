@@ -51,7 +51,7 @@ export default function Title() {
           w="90%"
           mb="1rem"
           rightIcon={<HiArrowCircleRight size={"2.5rem"} color={"#8EA6D5"} />}
-          onClick={() => navigate("/listserv")}
+          onClick={() => window.open("https://brown.us14.list-manage.com/subscribe?u=e4c050b452be6603cafc27e3d&id=2826403aaa")}
         >
           Subscribe to our Listserv
         </Button>
