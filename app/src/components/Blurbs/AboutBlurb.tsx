@@ -20,7 +20,7 @@ export default function AboutBlurb() {
       templateAreas={`"left right"`}
       gridTemplateColumns={"1fr 1fr"}
       h="93vh"
-      w="100vw"
+      w="100%"
       alignItems={"center"}
       bg="#AABBDC"
     >

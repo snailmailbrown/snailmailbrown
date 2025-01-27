@@ -19,7 +19,7 @@ export default function Title() {
       templateAreas={`"left right"`}
       gridTemplateColumns={"1fr 1.1fr"}
       h="93vh"
-      w="100vw"
+      w="100%"
       p="20px"
       alignItems={"center"}
     >

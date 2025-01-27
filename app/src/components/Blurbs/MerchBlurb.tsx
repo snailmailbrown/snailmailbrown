@@ -19,7 +19,7 @@ export default function MerchBlurb() {
       templateAreas={`"left right"`}
       gridTemplateColumns={"2fr 3fr"}
       h="93vh"
-      w="100vw"
+      w="100%"
       alignItems={"center"}
       bg="#8EA6D5"
     >

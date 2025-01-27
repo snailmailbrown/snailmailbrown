@@ -54,7 +54,7 @@ export default function GalleryBlurb() {
   return (
     <Flex
       h="93vh"
-      w="100vw"
+      w="100%"
       alignItems={"center"}
       justifyContent={"center"}
       display={"flex"}
