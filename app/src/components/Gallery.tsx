@@ -34,7 +34,7 @@ export default function Gallery() {
         flexDir={"row"}
         flexWrap={"wrap"}
       >
-      <Grid templateColumns={"repeat(3, 1fr)"} gap={8} w="20rem" my="2rem">
+      <Grid templateColumns="repeat(auto-fill, minmax(200px, 1fr))" gap={8} w="65%" my="2rem">
         {gallery.map((m, idx) => (
           <GridItem>
             <Image

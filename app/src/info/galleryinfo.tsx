@@ -58,7 +58,7 @@ const gallery: GalleryInfo[] = [
     pic: "/images/snailmail/spring_social_1.png",
     title: "Spring Event 2024",
     caption:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Spring is a great time for picnics and journaling. Snails came to celebrate the warm weather with paper flowers and fun spring stationery last year. We had picnic munchies available for snails to snack on while decorating for the seasonas well :)",
   },
   {
     pic: "/images/snailmail/polaroid_night.jpg",
@@ -91,6 +91,12 @@ const gallery: GalleryInfo[] = [
       "A Lofi study session was the perfect way for all the snails to prepare for their midterms. With chill music and some good company, our snails were extra productive!",
   },
   {
+    pic: "/images/snailmail/stamp_carving_1.png",
+    title: "Stamp Carving",
+    caption:
+      "A long waited workshop: rubber stamp carving! Snails were able to sketch our their own design and unleash their creativity to create their very own stamps to take home and use! Everyone was also given a small ink pad for personal use. It was tons of fun, and we hope to bring it back soon!",
+  },
+  {
     pic: "/images/snailmail/snail_santa.jpg",
     title: "Christmas Card Making",
     caption:
@@ -101,6 +107,12 @@ const gallery: GalleryInfo[] = [
     title: "Halloween with Snail & Mail",
     caption:
       "Our lovely and beautiful founders Emily Sun and Julie Yeo are dressed as Snail (Emily) and Mail (Julie) for Halloween in 2023, their graduating year at Brown (we miss you already). Aren't they the most adorable duo ever?",
+  },
+  {
+    pic: "/images/snailmail/journal_binding_2.png",
+    title: "Journal Binding",
+    caption:
+      "A snail mail favorite! Snails created their own notebooks to use at our weekly meetings. With a little bit of cardstock, paper, and twine, snails binded their own journals and personalized them with various stickers and washi tapes! A fun memory and keepsake for everyone <3",
   },
   {
     pic: "/images/snailmail/studio_ghibli.jpg",
