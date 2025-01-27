@@ -28,7 +28,13 @@ export default function Gallery() {
           follow us on instagram <Link variant="pageLink" href="https://www.instagram.com/snailmailbrown?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@snailmailbrown</Link> to see even more!
         </Text>
       </Flex>
-      <Grid templateColumns="repeat(3, 1fr)" gap={8} w="65%" my="2rem">
+      <Flex
+        alignItems={"flex-start"}
+        justifyContent={"center"}
+        flexDir={"row"}
+        flexWrap={"wrap"}
+      >
+      <Grid templateColumns={"repeat(3, 1fr)"} gap={8} w="20rem" my="2rem">
         {gallery.map((m, idx) => (
           <GridItem>
             <Image
@@ -44,6 +50,7 @@ export default function Gallery() {
           </GridItem>
         ))}
       </Grid>
+      </Flex>
       <Modal
         isOpen={expand >= 0}
         onClose={() => expand == -1}

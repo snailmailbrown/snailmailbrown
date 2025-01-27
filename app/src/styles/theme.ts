@@ -1,4 +1,4 @@
-import { extendTheme, ThemeConfig, useColorModeValue } from "@chakra-ui/react";
+import { extendTheme, grid, ThemeConfig, useColorModeValue } from "@chakra-ui/react";
 import "@fontsource/inter";
 import "@fontsource/inter/900.css";
 import "@fontsource/inter/800.css";

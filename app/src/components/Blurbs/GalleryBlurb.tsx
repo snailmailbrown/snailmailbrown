@@ -57,6 +57,7 @@ export default function GalleryBlurb() {
       w="100vw"
       alignItems={"center"}
       justifyContent={"center"}
+      display={"flex"}
       flexDir={"column"}
     >
       <Text variant="subHeader" color="#303030" mb="2rem">

@@ -59,16 +59,16 @@ export default function MerchBlurb() {
       >
         <Image
           objectFit="cover"
-          h="30rem"
-          w="25rem"
+          h="90%"
+          w="43%"
           margin="10px"
           src="/images/snailmail/sweatshirt_back.png"
           borderRadius="2%"
         />
         <Image
           objectFit="cover"
-          h="30rem"
-          w="30rem"
+          h="90%"
+          w="48%"
           margin="10px"
           src="/images/snailmail/tote_bag.png"
           borderRadius="2%"

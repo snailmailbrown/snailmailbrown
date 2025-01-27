@@ -49,16 +49,16 @@ export default function LaunchOne() {
       >
         <Image
           objectFit="cover"
-          h="30rem"
-          w="25rem"
+          h="90%"
+          w="40%"
           margin="10px"
           src="/images/snailmail/merch_2.png"
           borderRadius="2%"
         />
         <Image
           objectFit="cover"
-          h="30rem"
-          w="35rem"
+          h="90%"
+          w="50%"
           margin="10px"
           src="/images/snailmail/merch_3.png"
           borderRadius="2%"

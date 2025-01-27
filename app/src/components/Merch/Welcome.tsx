@@ -17,9 +17,11 @@ export default function Merch() {
       w="100vw"
       p="20px"
       alignItems={"center"}
+      justifyContent={"center"}
+      display={"flex"}
     >
-      <GridItem area={"center"} alignItems={"center"} p="10rem">
-        <Text variant={"bigHeader"} color="#8EA6D5" lineHeight={"85%"}>
+      <GridItem area={"center"} alignItems={"center"}>
+        <Text variant={"bigHeader"} color="#8EA6D5" lineHeight={"90%"}>
           We have merch!
         </Text>
       </GridItem>

@@ -16,6 +16,9 @@ export default function LaunchOne() {
       h="80vh"
       w="100vw"
       alignItems={"top"}
+      justifyContent={"center"}
+      display={"flex"}
+      flexDir={"column"}
     >
       {/* </Grid><Grid templateColumns="repeat(3, 1fr)" gap={8} w="65%" my="2rem"> */}
       <GridItem
@@ -25,24 +28,24 @@ export default function LaunchOne() {
       >
         <Image
           objectFit="cover"
-          h="30rem"
-          w="25rem"
+          h="80%"
+          w="30%"
           margin="10px"
           src="/images/snailmail/sweatshirt_front.png"
           borderRadius="2%"
         />
         <Image
           objectFit="cover"
-          h="30rem"
-          w="25rem"
+          h="80%"
+          w="30%"
           margin="10px"
           src="/images/snailmail/sweatshirt_back.png"
           borderRadius="2%"
         />
         <Image
           objectFit="cover"
-          h="30rem"
-          w="30rem"
+          h="80%"
+          w="30%"
           margin="10px"
           src="/images/snailmail/tote_bag.png"
           borderRadius="2%"
