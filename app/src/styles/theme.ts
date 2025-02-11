@@ -1,4 +1,4 @@
-import { extendTheme, grid, ThemeConfig, useColorModeValue } from "@chakra-ui/react";
+import { extendTheme, grid, textDecoration, ThemeConfig, useColorModeValue } from "@chakra-ui/react";
 import "@fontsource/inter";
 import "@fontsource/inter/900.css";
 import "@fontsource/inter/800.css";
@@ -103,13 +103,37 @@ const components = {
       }),
       pageLink: () => ({
         fontFamily: fonts.subtitle,
-        fontSize: ".6rem",
+        fontSize: ".7rem",
         letterSpacing: ".05rem",
-        fontWeight: "600",
+        fontWeight: "800",
         paddingX: ".05rem",
         color: "#B1C5EC",
         _hover: {
           color: "#303030",
+          textDecoration: "none"
+        },
+      }),
+      pageLink2: () => ({
+        fontFamily: fonts.subtitle,
+        fontSize: ".7rem",
+        letterSpacing: ".05rem",
+        fontWeight: "800",
+        paddingX: ".05rem",
+        color: "#2B59C4",
+        _hover: {
+          color: "#303030",
+          textDecoration: "none"
+        },
+      }),
+      pageLinkBig: () => ({
+        fontFamily: fonts.subtitle,
+        fontSize: "1rem",
+        letterSpacing: ".05rem",
+        fontWeight: "600",
+        paddingX: ".05rem",
+        color: "#3473ED",
+        _hover: {
+          color: "#E6ECF7",
           textDecoration: "none"
         },
       }),
@@ -120,6 +144,12 @@ const components = {
       subtitle: () => ({
         fontFamily: fonts.subtitle,
         fontSize: ".7rem",
+        textAlign: "justify",
+      }),
+      subtitleBig: () => ({
+        fontFamily: fonts.subtitle,
+        fontSize: ".7rem",
+        fontWeight: "600",
         textAlign: "justify",
       }),
       subtitleCondense: () => ({

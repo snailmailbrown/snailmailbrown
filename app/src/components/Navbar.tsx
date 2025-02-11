@@ -32,6 +32,9 @@ export default function Navbar() {
           <ChakraLink as={ReactRouterLink} to="/merch" variant={"navLink"}>
             MERCH
           </ChakraLink>
+          <ChakraLink as={ReactRouterLink} to="/programs" variant={"navLink"}>
+            PROGRAMS
+          </ChakraLink>
         </Flex>
       </Flex>
     </Box>

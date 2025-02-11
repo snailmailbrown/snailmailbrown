@@ -10,6 +10,7 @@ import About from "./components/About";
 import Fonts from "./styles/fonts";
 import Gallery from "./components/Gallery";
 import Merch from "./components/Merch";
+import Programs from "./components/Programs";
 
 export const App = () => (
   <ChakraProvider theme={customTheme}>
@@ -21,6 +22,7 @@ export const App = () => (
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/merch" element={<Merch />} />
+        <Route path="/programs" element={<Programs />} />
       </Routes>
     </BrowserRouter>
   </ChakraProvider>
