@@ -35,6 +35,9 @@ export default function Navbar() {
           <ChakraLink as={ReactRouterLink} to="/programs" variant={"navLink"}>
             PROGRAMS
           </ChakraLink>
+          <ChakraLink as={ReactRouterLink} to="/polaroids" variant={"navLink"}>
+            POLAROID WALL
+          </ChakraLink>
         </Flex>
       </Flex>
     </Box>
