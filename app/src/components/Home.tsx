@@ -6,6 +6,7 @@ import AboutBlurb from "./Blurbs/AboutBlurb";
 import GalleryBlurb from "./Blurbs/GalleryBlurb";
 import MerchBlurb from "./Blurbs/MerchBlurb";
 import CalendarBlurb from "./Blurbs/CalendarBlurb";
+import JournalPrompts from "./Blurbs/JournalPrompts";
 
 export default function Home() {
   return (
