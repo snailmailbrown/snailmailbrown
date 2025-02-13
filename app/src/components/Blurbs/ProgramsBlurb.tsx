@@ -38,7 +38,7 @@ export default function JournalPrompts() {
             objectFit="cover"
             h="40vh"
             w="20vw"
-            src="/images/snailmail/eboard_christmas_2.jpg"
+            src="/images/snailmail/eboard_christmas_2.png"
             borderTopRadius={"46%"}
         />
         <Button
