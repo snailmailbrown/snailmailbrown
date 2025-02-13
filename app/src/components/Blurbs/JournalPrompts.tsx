@@ -33,7 +33,7 @@ export default function JournalPrompts() {
           objectFit="cover"
           h="70vh"
           w="30vw"
-          src="/images/snailmail/og_eboard.png"
+          src="/images/snailmail/julie_emily_wen.jpg"
           borderTopRadius={"46%"}
         />
       </GridItem>
