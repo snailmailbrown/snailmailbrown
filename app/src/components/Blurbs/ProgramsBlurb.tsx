@@ -51,7 +51,7 @@ export default function JournalPrompts() {
           Check it out!
         </Button>
         <Text variant="subtitle" color="#6D5B51" w="50%">
-          Looking for someone to exchange letters with? Sing up for our campus-wide pen-pal program! Open to all Brown/RISD students and faculty.
+          Looking for someone to exchange letters with? Sign up for our campus-wide pen-pal program! Open to all Brown/RISD students and faculty.
           <br/><br/>
           Letter supplies and stamps will be available at our weekly drop-in hours for you to use and write to your pen-pal.
         </Text>
