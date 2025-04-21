@@ -11,7 +11,6 @@ import {
 import { HiArrowCircleRight } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 
-
 export default function JournalPrompts() {
   const navigate = useNavigate();
 
@@ -55,15 +54,20 @@ export default function JournalPrompts() {
           src="/images/star_divider_blue.png"
         />
         <Text variant="subtitleBig" w="50%" color="#000000">
-        - Rose, Bud, Thorn: What's something good that happened today? What's something you're looking forward to? What's something that wasn't so great?
-        <br/><br/>
-        - New Year's Resolutions Check-in: How are you doing? Have your resolutions changed?
-        <br/><br/>
-        - What's your goal for this week?
-        <br/><br/>
-        - Valentine's Day plans?? You're coming to Snail Mail's Valentine's Day Event with CCP and Yarnaholics right??
-        <br/><br/>
-        - Write yourself a love letter!
+          - Rose, Bud, Thorn: What's something good that happened today? What's
+          something you're looking forward to? What's something that wasn't so
+          great?
+          <br />
+          <br />
+          - How was Spring Break? What was your favorite memory?
+          <br />
+          <br />
+          - What's your goal for this week?
+          <br />
+          <br />
+          - Favorite Snail Mail event of the semester?
+          <br />
+          <br />- Write yourself a love letter!
         </Text>
       </GridItem>
     </Grid>
