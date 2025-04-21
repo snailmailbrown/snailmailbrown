@@ -40,6 +40,51 @@ const polaroids: PolaroidInfo[] = [
   {
     pic: "/images/snailmail/emily_julie_2.png",
   },
+  {
+    pic: "/images/snailmail/four_1.jpg",
+  },
+  {
+    pic: "/images/snailmail/eboard_vday.jpg",
+  },
+  {
+    pic: "/images/snailmail/four_2.jpg",
+  },
+  {
+    pic: "/images/snailmail/kaiti_1.jpg",
+  },
+  {
+    pic: "/images/snailmail/kaiti_2.jpg",
+  },
+  {
+    pic: "/images/snailmail/kaiti_3.jpg",
+  },
+  {
+    pic: "/images/snailmail/tuyet_havi.jpg",
+  },
+  {
+    pic: "/images/snailmail/trio_1.jpg",
+  },
+  {
+    pic: "/images/snailmail/kiara_emily_michelle.jpg",
+  },
+  {
+    pic: "/images/snailmail/duo_3.jpg",
+  },
+  {
+    pic: "/images/snailmail/duo_1.jpg",
+  },
+  {
+    pic: "/images/snailmail/duo_2.jpg",
+  },
+  {
+    pic: "/images/snailmail/four_3.jpg",
+  },
+  {
+    pic: "/images/snailmail/alicia_shristi_michelle.jpg",
+  },
+  {
+    pic: "/images/snailmail/four_4.jpg",
+  },
 ];
 
 export { polaroids };
