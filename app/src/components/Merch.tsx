@@ -4,7 +4,6 @@ import { HiArrowCircleRight } from "react-icons/hi";
 import Welcome from "./Merch/Welcome";
 import LaunchOne from "./Merch/LaunchOne";
 import LaunchTwo from "./Merch/LaunchTwo";
-import LaunchTwoImages from "./Merch/LaunchTwoImages";
 
 export default function Merch() {
   return (
@@ -12,7 +11,6 @@ export default function Merch() {
         <Welcome/>
         <LaunchOne/>
         <LaunchTwo/>
-        <LaunchTwoImages/>
     </div>
     
   );

@@ -35,9 +35,9 @@ export default function LaunchOne() {
           sold out !
         </Text>
         <Text variant="subtitle" color="#303030" w="50%" mb="2rem">
-        Last year we launched our very first piece of snail mail merchandise with 
+        Two years ago we launched our very first piece of snail mail merchandise with 
         our cozy custom sweaters. The design is hand-drawn by one of our former Art Directors, 
-        Sienna Lew, and features a bullet journalling/scrapbooking spread on the back, 
+        Sienna Lew, and features a bullet journaling/scrapbooking spread on the back, 
         and a Snail Mail x Brown logo in the front! 
         </Text>
       </GridItem>

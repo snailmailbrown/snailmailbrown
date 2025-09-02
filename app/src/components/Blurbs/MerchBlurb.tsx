@@ -34,12 +34,11 @@ export default function MerchBlurb() {
           merch !
         </Text>
         <Text variant="subtitle" color="white" w="50%">
-          Exciting news! We have official Snail Mail merch! Share your love of Snail Mail with our custom sweaters!! 
+          Want to rep your love of Snail Mail wherever you go?
           <br></br>
           <br></br>
-          These are LIMITED EDITION, so grab one before we sell out!
-          The design is hand-drawn by one of our Art Directors, Kendra Eastep, 
-          and Kiara Anderson and features an adorable heart stamp design!
+          Exciting news! We have official Snail Mail merch! Each collection features hand drawn graphics from our wonderful Art Directors, and rumor has it they're itching to make some new designs. We may
+          be launching a new collection very soon...
         </Text>
         <Button
           variant="solid"
@@ -48,7 +47,7 @@ export default function MerchBlurb() {
           m="2rem"
           onClick={() => navigate("/merch")}
         >
-          Check it out!
+          Want to Learn More?
         </Button>
       </GridItem>
       <GridItem

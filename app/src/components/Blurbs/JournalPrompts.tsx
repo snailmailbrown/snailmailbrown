@@ -54,20 +54,16 @@ export default function JournalPrompts() {
           src="/images/star_divider_blue.png"
         />
         <Text variant="subtitleBig" w="50%" color="#000000">
-          - Rose, Bud, Thorn: What's something good that happened today? What's
-          something you're looking forward to? What's something that wasn't so
-          great?
+          - What was your favorite summer memory? Make a collage of your summer adventures!
           <br />
           <br />
-          - How was Spring Break? What was your favorite memory?
+          - What's something you're really looking forward to this school year?
           <br />
           <br />
-          - What's your goal for this week?
+          - What are 3 goals you have for the semester? Try to think of one that's academic, one that's just for fun, and one that's a personal goal!
           <br />
           <br />
-          - Favorite Snail Mail event of the semester?
-          <br />
-          <br />- Write yourself a love letter!
+          - Make a vision board for the 2025-2026 school year!
         </Text>
       </GridItem>
     </Grid>
