@@ -19,9 +19,16 @@ import {
 import Eboard from "./Eboard";
 import { polaroids } from "../info/polaroidinfo";
 import { HiX } from "react-icons/hi";
+import "../styles/animations.css";
 
 export default function Polaroids() {
-  const [expand, setExpand] = useState(-1);
+  // const [isShaking, setIsShaking] = useState(false);
+
+  //     const triggerShake = () => {
+  //       setIsShaking(true);
+  //       setTimeout(() => setIsShaking(false), 500); // Reset after animation duration
+  //     };
+
   return (
     <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
       <Flex
@@ -68,7 +75,8 @@ export default function Polaroids() {
                 src={m.pic}
                 borderRadius={"1rem"}
                 border={"2px solid #D9D9D9"}
-                cursor={"pointer"}
+                // cursor={"pointer"}
+                // onClick={() => triggerShake}
               />
             </GridItem>
           ))}

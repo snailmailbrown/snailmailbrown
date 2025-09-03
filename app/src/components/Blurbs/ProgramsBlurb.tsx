@@ -11,8 +11,7 @@ import {
 import { HiArrowCircleRight } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 
-
-export default function JournalPrompts() {
+export default function Programs() {
   const navigate = useNavigate();
 
   return (
@@ -22,9 +21,9 @@ export default function JournalPrompts() {
       h="93vh"
       w="100%"
       alignItems={"center"}
-      bg={"#FFEEDA"}
+      bg={"#FFF2EF"}
     >
-<GridItem
+      <GridItem
         area={"left"}
         display="flex"
         alignItems={"center"}
@@ -35,25 +34,32 @@ export default function JournalPrompts() {
           campus pen-pals
         </Text>
         <Image
-            objectFit="cover"
-            h="40vh"
-            w="20vw"
-            src="/images/snailmail/eboard_christmas_2.png"
-            borderTopRadius={"46%"}
+          objectFit="cover"
+          h="40vh"
+          w="20vw"
+          src="/images/snailmail/eboard_christmas_2.png"
+          borderTopRadius={"46%"}
         />
         <Button
           variant="solid"
           bg="#E8CEC1"
           color="#473A32"
+          _hover={{
+            bg: "#cfaa98ff"
+          }}
           m="2rem"
           onClick={() => navigate("/programs")}
         >
           Check it out!
         </Button>
         <Text variant="subtitle" color="#6D5B51" w="50%">
-          Looking for someone to exchange letters with? Sign up for our campus-wide pen-pal program! Open to all Brown/RISD students and faculty.
-          <br/><br/>
-          Letter supplies and stamps will be available at our weekly drop-in hours for you to use and write to your pen-pal.
+          Looking for someone to exchange letters with? Sign up for our
+          campus-wide pen-pal program! Open to all Brown/RISD students and
+          faculty.
+          <br />
+          <br />
+          Letter supplies and stamps will be available at our weekly drop-in
+          hours for you to use and write to your pen-pal.
         </Text>
       </GridItem>
       <GridItem
@@ -63,47 +69,55 @@ export default function JournalPrompts() {
         flexDirection={"column"}
         justifyContent="center"
       >
-        <Text variant={"subHeader"} color="#473A32" justifyContent={"flex-start"} lineHeight={"85%"}>
-            collabs?
+        <Text
+          variant={"subHeader"}
+          color="#473A32"
+          justifyContent={"flex-start"}
+          lineHeight={"85%"}
+        >
+          collabs?
         </Text>
         <Image
-            objectFit="contain"
-            w="90%"
-            mr="-8rem"
-            mt="-3rem"
-            src="/images/star_divider_brown.png"
+          objectFit="contain"
+          w="90%"
+          mr="-8rem"
+          mt="-3rem"
+          src="/images/star_divider_brown.png"
         />
         <GridItem
-                area={"right"}
-                display="flex"
-                alignItems={"center"}
-                justifyContent="center"
-              >
-            <Image
-                objectFit="cover"
-                h="35%"
-                w="35%"
-                margin="10px"
-                src="/images/snailmail/vsa_collab.jpg"
-                borderRadius="2%"
-            />
-            <Image
-                objectFit="cover"
-                h="35%"
-                w="35%"
-                margin="10px"
-                src="/images/snailmail/visions_collab.jpg"
-                borderRadius="2%"
-            />
+          area={"right"}
+          display="flex"
+          alignItems={"center"}
+          justifyContent="center"
+        >
+          <Image
+            objectFit="cover"
+            h="35%"
+            w="35%"
+            margin="10px"
+            src="/images/snailmail/vsa_collab.jpg"
+            borderRadius="2%"
+          />
+          <Image
+            objectFit="cover"
+            h="35%"
+            w="35%"
+            margin="10px"
+            src="/images/snailmail/visions_collab.jpg"
+            borderRadius="2%"
+          />
         </GridItem>
         <Button
-            variant="solid"
-            bg="#473A32"
-            color="#FAF1E6"
-            m="2rem"
-            onClick={() => navigate("/programs")}
+          variant="solid"
+          bg="#473A32"
+          color="#FAF1E6"
+          _hover={{
+            bg: "#7d5b4aff"
+          }}
+          m="2rem"
+          onClick={() => navigate("/programs")}
         >
-            LEARN MORE
+          LEARN MORE
         </Button>
       </GridItem>
     </Grid>

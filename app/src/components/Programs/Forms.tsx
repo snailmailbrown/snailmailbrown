@@ -29,19 +29,55 @@ export default function Forms() {
         justifyContent="center"
         flexDir={"column"}
       >
-        <Text variant="subHeader" align={"center"} color="#303030" lineHeight={"90%"} mb="2rem">
+        <Text
+          variant="subHeader"
+          align={"center"}
+          color="#303030"
+          lineHeight={"90%"}
+          mb="2rem"
+        >
           want to collab?
         </Text>
-        <Text variant="tinyHeader" align={"center"} color="#303030" lineHeight={"90%"} mb="2rem">
-          send us an email at <Link variant="pageLinkBig" href="https://mail.google.com/mail/u/3/#inbox?compose=CllgCJqWggFKgtgXDPphBmFZQhjQpKxwLwKkHwDqnlsHVJqMtkPtcMmQTRqbgxWZLqhMGSMVxwL">snailmail@brown.edu</Link> !
+        <Text
+          variant="tinyHeader"
+          align={"center"}
+          color="#303030"
+          lineHeight={"90%"}
+          mb="2rem"
+        >
+          email us at{" "}
+          <Link
+            variant="pageLinkBig"
+            href="https://mail.google.com/mail/u/3/#inbox?compose=CllgCJqWggFKgtgXDPphBmFZQhjQpKxwLwKkHwDqnlsHVJqMtkPtcMmQTRqbgxWZLqhMGSMVxwL"
+          >
+            snailmail@brown.edu
+          </Link>
         </Text>
         <Text variant="subtitle" color="#FFFFFF" w="50%" mb="2rem">
-          Previous collaborations include a lofi study session with VSA, a Valentine's Day collab 
-          with Birbs@Brown, postcard writing with VISIONS Magazine, journaling with LGBTQ Center, 
-          scrapbooking with Mosaic+, and creative hours with Create@Brown!
-          <br/>
-          <br/>
-          We've also collaborated with WiSE, CCP, Active Minds, BURP, Yarnaholics, and more!
+          Previous collaborations include a lofi study session with VSA, a
+          Valentine's Day collab with Birbs@Brown, postcard writing with VISIONS
+          Magazine, journaling with LGBTQ Center, scrapbooking with Mosaic+, and
+          creative hours with Create@Brown!
+          <br />
+          <br />
+          We've also collaborated with WiSE, CCP, Active Minds, BURP,
+          Yarnaholics, and more!
+        </Text>
+        <Text
+          variant="tinyHeader"
+          align={"center"}
+          color="#303030"
+          lineHeight={"90%"}
+          mb="2rem"
+        >
+          or fill out this{" "}
+          <Link
+            variant="pageLinkBig"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf_CwzYa9_w76D9wCtIrInMly4pQ682MDoXxTPesKQmhvQ1SQ/viewform?usp=dialog"
+          >
+            collab request form
+          </Link>{" "}
+          !
         </Text>
       </GridItem>
       <GridItem
@@ -66,13 +102,27 @@ export default function Forms() {
         justifyContent="center"
         flexDir={"column"}
       >
-        <Text variant="tinyHeader" align={"center"} color="#303030" lineHeight={"90%"} mb="2rem">
+        <Text
+          variant="tinyHeader"
+          align={"center"}
+          color="#303030"
+          lineHeight={"90%"}
+          mb="2rem"
+        >
           have feedback or ideas for meetings?
         </Text>
         <Text variant="subtitle" color="#FFFFFF" w="50%" mb="2rem">
-          Let us know any meeting ideas you have, any stationery you want to see, 
-          any questions, or if you just wanna leave a note by filling out this  
-          <Link variant="pageLink2" href="https://mail.google.com/mail/u/3/#inbox?compose=CllgCJqWggFKgtgXDPphBmFZQhjQpKxwLwKkHwDqnlsHVJqMtkPtcMmQTRqbgxWZLqhMGSMVxwL"> feedback form</Link> !
+          Let us know any meeting ideas you have, any stationery you want to
+          see, any questions, or if you just wanna leave a note by filling out
+          this
+          <Link
+            variant="pageLink2"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScW7pVRlyn5ohCzsKe4h59bQ9YFATbt4u4dca0dtVs4NyrQIg/viewform"
+          >
+            {" "}
+            feedback form
+          </Link>{" "}
+          !
         </Text>
       </GridItem>
     </Grid>
