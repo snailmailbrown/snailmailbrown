@@ -63,6 +63,13 @@ export default function Title() {
         >
           We are a community of students who love stationery, journaling, and 
           letter-writing at Brown University! Come join us at one of our weekly meetings Mondays 7-9pm in Friedman 101 :D
+
+          <br></br>
+          <br></br>
+          "The content of UCS/GSC recognized student organization websites is generated independently from Brown University. 
+          The statements, views, opinions, and information contained on the site are personal to those of the authors and 
+          student organization and do not necessarily reflect those of Brown University. The content on the site is not 
+          reviewed, approved, or endorsed by Brown University or its faculty or staff.""
         </Text>
       </GridItem>
       <GridItem area={"right"} alignItems={"center"} justifyContent="center">
