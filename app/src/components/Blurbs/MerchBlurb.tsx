@@ -16,9 +16,10 @@ export default function MerchBlurb() {
 
   return (
     <Grid
-      templateAreas={`"left right"`}
-      gridTemplateColumns={"2fr 3fr"}
-      h="93vh"
+      templateAreas={{ base: `"left" "right"`, md: `"left right"` }}
+      gridTemplateColumns={{ base: "1fr", md: "2fr 3fr" }}
+      h={{ base: "auto", md: "93vh" }}
+      py={{ base: "2rem", md: 0 }}
       w="100%"
       alignItems={"center"}
       bg="#8EA6D5"
@@ -29,11 +30,12 @@ export default function MerchBlurb() {
         alignItems={"center"}
         justifyContent="center"
         flexDir={"column"}
+        px={{ base: "1rem", md: 0 }}
       >
         <Text variant="subHeader" color="white">
           merch !
         </Text>
-        <Text variant="subtitle" color="white" w="50%">
+        <Text variant="subtitle" color="white" w={{ base: "85%", md: "50%" }}>
           Want to rep your love of Snail Mail wherever you go?
           <br></br>
           <br></br>
@@ -54,23 +56,26 @@ export default function MerchBlurb() {
         area={"right"}
         display="flex"
         alignItems={"center"}
-        justifyContent="flex-start"
+        justifyContent={{ base: "center", md: "flex-start" }}
+        flexDir={{ base: "column", md: "row" }}
+        gap={{ base: "1rem", md: 0 }}
       >
         <Image
           objectFit="cover"
-          h="90%"
-          w="43%"
-          margin="10px"
+          h={{ base: "auto", md: "90%" }}
+          w={{ base: "70vw", md: "43%" }}
+          margin={{ base: 0, md: "10px" }}
           src="/images/snailmail/sweatshirt_back.png"
           borderRadius="2%"
         />
         <Image
           objectFit="cover"
-          h="90%"
-          w="48%"
-          margin="10px"
+          h={{ base: "auto", md: "90%" }}
+          w={{ base: "75vw", md: "48%" }}
+          margin={{ base: 0, md: "10px" }}
           src="/images/snailmail/tote_bag.png"
           borderRadius="2%"
+          display={{ base: "none", md: "block" }}
         />
       </GridItem>
     </Grid>

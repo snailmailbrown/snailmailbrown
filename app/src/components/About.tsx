@@ -9,45 +9,50 @@ export default function About() {
       alignItems={"center"}
       justifyContent={"center"}
       flexDir={"column"}
+      pt={{ base: "10vh", md: 0 }}
     >
       <Flex
         alignItems={"center"}
         justifyContent={"space-between"}
-        h="60vh"
-        w="65%"
+        flexDir={{ base: "column", md: "row" }}
+        h={{ base: "auto", md: "60vh" }}
+        w={{ base: "90%", md: "65%" }}
+        py={{ base: "2rem", md: 0 }}
       >
         <Text variant="subHeader" color="#5F6061" lineHeight={"90%"}>
           about <br></br>snail mail
         </Text>
         <Image
           objectFit="cover"
-          h="20rem"
-          w="20rem"
+          h={{ base: "15rem", md: "20rem" }}
+          w={{ base: "15rem", md: "20rem" }}
           src="/images/abouticon.png"
         />
       </Flex>
       <Flex
         alignItems={"center"}
         justifyContent={"space-evenly"}
+        flexDir={{ base: "column", md: "row" }}
         pb="3rem"
-        w="75%"
+        w={{ base: "90%", md: "75%" }}
+        gap={{ base: "2rem", md: 0 }}
       >
-        <Flex flexDir={"column"} w="25%" alignItems={"center"}>
+        <Flex flexDir={"column"} w={{ base: "100%", md: "25%" }} alignItems={"center"}>
           <Text variant="tinyHeader" mb="2rem" color="#5F6061">
             Beginnings
           </Text>
           <Text variant="subtitleCondense" color="#6F6F6F">
             Snail Mail started during the pandemic, when there was a need for community and 
             a space to relax while making friends on campus. It started as just one letter 
-            (from Emily’s mailbox to Jess’ mailbox in page-rob)🐌📬, then turned into a 
+            (from Emily's mailbox to Jess' mailbox in page-rob)🐌📬, then turned into a 
             full-blown effort to promote letter-writing, bullet journaling, and love for 
-            stationery on Brown’s campus! 
+            stationery on Brown's campus! 
             <br></br>
             <br></br>
             Together with an extremely creative and dedicated team, Emily's vision was brought to life with Snail Mail @ Brown!
           </Text>
         </Flex>
-        <Flex flexDir={"column"} w="25%" alignItems={"center"}>
+        <Flex flexDir={"column"} w={{ base: "100%", md: "25%" }} alignItems={"center"}>
           <Text variant="tinyHeader" mb="2rem" color="#5F6061">
             Growth
           </Text>
@@ -61,7 +66,7 @@ export default function About() {
             with the students of Brown and RISD as we continue to grow as a community.
           </Text>
         </Flex>
-        <Flex flexDir={"column"} w="25%" alignItems={"center"}>
+        <Flex flexDir={"column"} w={{ base: "100%", md: "25%" }} alignItems={"center"}>
           <Text variant="tinyHeader" mb="2rem" color="#5F6061">
             Mission
           </Text>
@@ -83,7 +88,7 @@ export default function About() {
         alignItems={"center"}
         justifyContent={"space-evenly"}
         pb="3rem"
-        w="75%"
+        w={{ base: "95%", md: "75%" }}
         flexDir={"column"}
         my="2rem"
       >
@@ -96,7 +101,7 @@ export default function About() {
         alignItems={"center"}
         justifyContent={"space-evenly"}
         pb="3rem"
-        w="75%"
+        w={{ base: "95%", md: "75%" }}
         flexDir={"column"}
         my="2rem"
       >

@@ -16,14 +16,15 @@ export default function Title() {
 
   return (
     <Grid
-      templateAreas={`"left right"`}
-      gridTemplateColumns={"1fr 1.1fr"}
-      h="93vh"
+      templateAreas={{ base: `"right" "left"`, md: `"left right"` }}
+      gridTemplateColumns={{ base: "1fr", md: "1fr 1.1fr" }}
+      h={{ base: "auto", md: "93vh" }}
       w="100%"
-      p="20px"
+      p={{ base: "1rem", md: "20px" }}
+      pt={{ base: "10vh", md: "20px" }}
       alignItems={"center"}
     >
-      <GridItem area={"left"} alignItems={"center"} p="10rem">
+      <GridItem area={"left"} alignItems={"center"} p={{ base: "2rem", md: "10rem" }}>
         <Text variant={"bigHeader"} color="#8EA6D5" lineHeight={"85%"}>
           Snail
         </Text>
@@ -48,7 +49,7 @@ export default function Title() {
           justifyContent={"space-between"}
           variant="outline"
           pr="0"
-          w="90%"
+          w={{ base: "100%", md: "90%" }}
           mb="1rem"
           rightIcon={<HiArrowCircleRight size={"2.5rem"} color={"#8EA6D5"} />}
           onClick={() => window.open("https://brown.us14.list-manage.com/subscribe?u=e4c050b452be6603cafc27e3d&id=2826403aaa")}
@@ -59,7 +60,7 @@ export default function Title() {
           variant={"subtitle"}
           color="#6F6F6F"
           textAlign={"justify"}
-          w="90%"
+          w={{ base: "100%", md: "90%" }}
         >
           We are a community of students who love stationery, journaling, and 
           letter-writing at Brown University! Come join us at one of our weekly meetings Mondays 7-9pm in Friedman 101 :D
@@ -72,11 +73,16 @@ export default function Title() {
           reviewed, approved, or endorsed by Brown University or its faculty or staff.""
         </Text>
       </GridItem>
-      <GridItem area={"right"} alignItems={"center"} justifyContent="center">
+      <GridItem 
+        area={"right"} 
+        alignItems={"center"} 
+        justifyContent="center"
+        display="flex"
+      >
         <Image
           objectFit="contain"
-          maxHeight="50%"
-          maxWidth="65%"
+          maxHeight={{ base: "40vh", md: "50%" }}
+          maxWidth={{ base: "80%", md: "65%" }}
           src="/images/stamps.png"
           borderRadius={"1rem"}
         />
