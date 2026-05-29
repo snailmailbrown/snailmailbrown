@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd app && npm install && npm run build",
+  "outputDirectory": "app/build",
+  "installCommand": "npm install",
+  "framework": "react",
+  "nodeVersion": "18.x"
+}
