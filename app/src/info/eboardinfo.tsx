@@ -1,10 +1,9 @@
-import React from "react";
 type EboardInfo = {
-  name: string,
-  position: string,
-  bio: string,
-  pic: string,
-  smallpic: string
+  name: string;
+  position: string;
+  bio: string;
+  pic: string;
+  smallpic: string;
 };
 
 const eboardMembers: EboardInfo[] = [
@@ -55,7 +54,7 @@ const eboardMembers: EboardInfo[] = [
     position: "social media chair",
     bio: "Hello! My name is Kiara, currently a sophomore concentrating in cognitive neuroscience. I’m from Miami, Florida but my family is from Peru (meaning I LOVE seafood). I spend my time reading fantasy novels or crocheting plushies to give to my friends. I have a really large stationary collection at home, and the markers feel too nice to use sometimes (it’s an issue). Super excited for another year with the Snail Mail family!",
     pic: "/images/eboard/kiara_ibanez.jpg",
-    smallpic:  "/images/eboard/kiara_ibanez.jpg",
+    smallpic: "/images/eboard/kiara_ibanez.jpg",
   },
   {
     name: "miranda gonzales",

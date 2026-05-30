@@ -1,10 +1,9 @@
-import React from "react";
 type EboardInfo = {
-  name: string,
-  position: string,
-  bio: string,
-  pic: string,
-  smallpic: string
+  name: string;
+  position: string;
+  bio: string;
+  pic: string;
+  smallpic: string;
 };
 
 const originalEboard: EboardInfo[] = [

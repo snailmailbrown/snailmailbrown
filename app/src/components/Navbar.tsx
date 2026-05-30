@@ -1,9 +1,5 @@
-import { Box, Flex } from "@chakra-ui/react";
-import React from "react";
+import { Box, Flex, Link as ChakraLink } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { Link as ChakraLink, LinkProps } from "@chakra-ui/react";
-
-
 
 export default function Navbar() {
   return (

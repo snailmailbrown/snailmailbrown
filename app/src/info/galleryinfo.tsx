@@ -1,8 +1,7 @@
-import React from "react";
 type GalleryInfo = {
-  pic: string,
-  title: string,
-  caption: string
+  pic: string;
+  title: string;
+  caption: string;
 };
 
 const gallery: GalleryInfo[] = [

@@ -1,4 +1,4 @@
-import { extendTheme, grid, textDecoration, ThemeConfig, useColorModeValue } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 import "@fontsource/inter";
 import "@fontsource/inter/900.css";
 import "@fontsource/inter/800.css";
@@ -98,7 +98,7 @@ const components = {
         color: "#A4A4A4",
         _hover: {
           color: "#303030",
-          textDecoration: "none"
+          textDecoration: "none",
         },
       }),
       pageLink: () => ({
@@ -110,7 +110,7 @@ const components = {
         color: "#B1C5EC",
         _hover: {
           color: "#303030",
-          textDecoration: "none"
+          textDecoration: "none",
         },
       }),
       pageLink2: () => ({
@@ -122,7 +122,7 @@ const components = {
         color: "#2B59C4",
         _hover: {
           color: "#303030",
-          textDecoration: "none"
+          textDecoration: "none",
         },
       }),
       pageLinkBig: () => ({
@@ -134,7 +134,7 @@ const components = {
         color: "#3473ED",
         _hover: {
           color: "#E6ECF7",
-          textDecoration: "none"
+          textDecoration: "none",
         },
       }),
     },

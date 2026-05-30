@@ -1,24 +1,5 @@
-import React, { useState } from "react";
-import {
-  Text,
-  Link,
-  Grid,
-  GridItem,
-  Image,
-  Flex,
-  Button,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
-  IconButton,
-} from "@chakra-ui/react";
-import Eboard from "./Eboard";
+import { Text, Link, Grid, GridItem, Image, Flex } from "@chakra-ui/react";
 import { polaroids } from "../info/polaroidinfo";
-import { HiX } from "react-icons/hi";
 import "../styles/animations.css";
 
 export default function Polaroids() {

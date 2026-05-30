@@ -1,14 +1,4 @@
-import React, { useRef } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-  Image,
-} from "@chakra-ui/react";
-import { HiArrowCircleRight } from "react-icons/hi";
+import { Grid, GridItem, Text, Image } from "@chakra-ui/react";
 
 export default function LaunchOne() {
   return (
@@ -28,17 +18,32 @@ export default function LaunchOne() {
         justifyContent="center"
         flexDir={"column"}
       >
-        <Text variant="subHeader" align={"center"} color="white" lineHeight={"90%"} mb="2rem">
+        <Text
+          variant="subHeader"
+          align={"center"}
+          color="white"
+          lineHeight={"90%"}
+          mb="2rem"
+        >
           snail mail <br></br> merch <br></br> launch 2.0
         </Text>
-        <Text variant="tinyHeader" align={"center"} color="white" lineHeight={"90%"} mb="2rem">
+        <Text
+          variant="tinyHeader"
+          align={"center"}
+          color="white"
+          lineHeight={"90%"}
+          mb="2rem"
+        >
           so popular we had to make more!
         </Text>
         <Text variant="subtitle" color="white" w="50%" mb="2rem">
-        Last year our merch featured not one but TWO items available for purchase! You guys wanted a Snail Mail tote bag, so obviously we had to make one. 
-        <br />
-        <br />
-        This lovely blue stamp design was designed by our very own Kendra Eastep with inspiration from fellow snail Kiara Anderson.
+          Last year our merch featured not one but TWO items available for
+          purchase! You guys wanted a Snail Mail tote bag, so obviously we had
+          to make one.
+          <br />
+          <br />
+          This lovely blue stamp design was designed by our very own Kendra
+          Eastep with inspiration from fellow snail Kiara Anderson.
         </Text>
       </GridItem>
       <GridItem

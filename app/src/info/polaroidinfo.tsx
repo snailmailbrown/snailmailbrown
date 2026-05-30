@@ -1,6 +1,5 @@
-import React from "react";
 type PolaroidInfo = {
-  pic: string,
+  pic: string;
 };
 
 const polaroids: PolaroidInfo[] = [

@@ -1,15 +1,4 @@
-import React, { useRef } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-  Image,
-  Link,
-} from "@chakra-ui/react";
-import { HiArrowCircleRight } from "react-icons/hi";
+import { Grid, GridItem, Text, Image, Link } from "@chakra-ui/react";
 
 export default function Forms() {
   return (

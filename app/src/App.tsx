@@ -1,10 +1,9 @@
-import * as React from "react";
-import { ChakraProvider, theme } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import "./styles/global.css";
 import "./styles/switch.css";
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import customTheme from "./styles/theme";
 import About from "./components/About";
 import Fonts from "./styles/fonts";

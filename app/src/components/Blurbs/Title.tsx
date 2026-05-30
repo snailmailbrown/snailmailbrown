@@ -1,19 +1,7 @@
-import React, { useRef } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-  Image,
-} from "@chakra-ui/react";
+import { Button, Grid, GridItem, Text, Image } from "@chakra-ui/react";
 import { HiArrowCircleRight } from "react-icons/hi";
-import { useNavigate } from "react-router-dom";
 
 export default function Title() {
-  const navigate = useNavigate();
-
   return (
     <Grid
       templateAreas={`"left right"`}
@@ -51,7 +39,11 @@ export default function Title() {
           w="90%"
           mb="1rem"
           rightIcon={<HiArrowCircleRight size={"2.5rem"} color={"#8EA6D5"} />}
-          onClick={() => window.open("https://brown.us14.list-manage.com/subscribe?u=e4c050b452be6603cafc27e3d&id=2826403aaa")}
+          onClick={() =>
+            window.open(
+              "https://brown.us14.list-manage.com/subscribe?u=e4c050b452be6603cafc27e3d&id=2826403aaa",
+            )
+          }
         >
           Subscribe to our Listserv
         </Button>
@@ -61,15 +53,17 @@ export default function Title() {
           textAlign={"justify"}
           w="90%"
         >
-          We are a community of students who love stationery, journaling, and 
-          letter-writing at Brown University! Come join us at one of our weekly meetings Mondays 7-9pm in Friedman 101 :D
-
+          We are a community of students who love stationery, journaling, and
+          letter-writing at Brown University! Come join us at one of our weekly
+          meetings Mondays 7-9pm in Friedman 101 :D
           <br></br>
           <br></br>
-          "The content of UCS/GSC recognized student organization websites is generated independently from Brown University. 
-          The statements, views, opinions, and information contained on the site are personal to those of the authors and 
-          student organization and do not necessarily reflect those of Brown University. The content on the site is not 
-          reviewed, approved, or endorsed by Brown University or its faculty or staff.""
+          "The content of UCS/GSC recognized student organization websites is
+          generated independently from Brown University. The statements, views,
+          opinions, and information contained on the site are personal to those
+          of the authors and student organization and do not necessarily reflect
+          those of Brown University. The content on the site is not reviewed,
+          approved, or endorsed by Brown University or its faculty or staff.""
         </Text>
       </GridItem>
       <GridItem area={"right"} alignItems={"center"} justifyContent="center">

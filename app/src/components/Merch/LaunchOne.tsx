@@ -1,14 +1,4 @@
-import React, { useRef } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-  Image,
-} from "@chakra-ui/react";
-import { HiArrowCircleRight } from "react-icons/hi";
+import { Grid, GridItem, Text, Image } from "@chakra-ui/react";
 
 export default function LaunchOne() {
   return (
@@ -28,17 +18,30 @@ export default function LaunchOne() {
         justifyContent="center"
         flexDir={"column"}
       >
-        <Text variant="subHeader" align={"center"} color="#303030" lineHeight={"90%"} mb="2rem">
+        <Text
+          variant="subHeader"
+          align={"center"}
+          color="#303030"
+          lineHeight={"90%"}
+          mb="2rem"
+        >
           snail mail <br></br> merch <br></br> launch 1.0
         </Text>
-        <Text variant="tinyHeader" align={"center"} color="#303030" lineHeight={"90%"} mb="2rem">
+        <Text
+          variant="tinyHeader"
+          align={"center"}
+          color="#303030"
+          lineHeight={"90%"}
+          mb="2rem"
+        >
           sold out !
         </Text>
         <Text variant="subtitle" color="#303030" w="50%" mb="2rem">
-        Two years ago we launched our very first piece of snail mail merchandise with 
-        our cozy custom sweaters. The design is hand-drawn by one of our former Art Directors, 
-        Sienna Lew, and features a bullet journaling/scrapbooking spread on the back, 
-        and a Snail Mail x Brown logo in the front! 
+          Two years ago we launched our very first piece of snail mail
+          merchandise with our cozy custom sweaters. The design is hand-drawn by
+          one of our former Art Directors, Sienna Lew, and features a bullet
+          journaling/scrapbooking spread on the back, and a Snail Mail x Brown
+          logo in the front!
         </Text>
       </GridItem>
       <GridItem

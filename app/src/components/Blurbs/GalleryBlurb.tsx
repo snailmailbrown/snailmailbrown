@@ -1,17 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-  Image,
-  IconButton,
-} from "@chakra-ui/react";
+import { useState } from "react";
+import { Button, Flex, Text, Image, IconButton } from "@chakra-ui/react";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
-
 
 const samplepics = [
   "/images/snailmail/social_4.png",
@@ -22,34 +12,18 @@ const samplepics = [
   "/images/snailmail/social_3.png",
 ];
 export default function GalleryBlurb() {
-    const [index, setIndex] = useState(1)
-    const [front, setFront] = useState(2)
-    const [back, setBack] = useState(0)
-    const [isChanged, setChanged] = useState(0)
-    const navigate = useNavigate();
+  const [index, setIndex] = useState(1);
+  const navigate = useNavigate();
 
-    useEffect(() => {
-        
-        index + 1 == samplepics.length ? setFront(0) : setFront(index + 1);
-        back < 0 ? setBack(samplepics.length - 1) : setBack(index - 1);
-        console.log("front:" + front + "back:" + back);
-    }, [isChanged])
+  const front = index === samplepics.length - 1 ? 0 : index + 1;
+  const back = index === 0 ? samplepics.length - 1 : index - 1;
 
-    function forward(){
-        setIndex(index + 1)
-        if (index >= samplepics.length) {
-          setIndex(0)
-        }
-        console.log('done:' + index)
-        setChanged(isChanged + 1)
-    }
-    function backward() {
-      setIndex(index - 1);
-      if (index < 0) {
-        setIndex(samplepics.length - 1);
-      }
-      setChanged(isChanged - 1);
-    }
+  function forward() {
+    setIndex((prev) => (prev >= samplepics.length - 1 ? 0 : prev + 1));
+  }
+  function backward() {
+    setIndex((prev) => (prev <= 0 ? samplepics.length - 1 : prev - 1));
+  }
 
   return (
     <Flex

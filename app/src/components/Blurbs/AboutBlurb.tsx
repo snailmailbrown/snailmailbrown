@@ -1,16 +1,5 @@
-import React, { useRef } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-  Image,
-} from "@chakra-ui/react";
-import { HiArrowCircleRight } from "react-icons/hi";
+import { Button, Grid, GridItem, Text, Image } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-
 
 export default function AboutBlurb() {
   const navigate = useNavigate();
@@ -56,13 +45,15 @@ export default function AboutBlurb() {
           src="/images/star_divider.png"
         />
         <Text variant="subtitle" w="50%" color="white">
-        We’re a community celebrating the art of handwritten letters, journaling, scrapbooking, etc.
-        We foster artistic creativity, reflection, and wellness by holding community events and meetings. 
-        Snail Mail provides equitable access to bullet journaling, letter-writing, and scrapbooking supplies for all.
-
+          We’re a community celebrating the art of handwritten letters,
+          journaling, scrapbooking, etc. We foster artistic creativity,
+          reflection, and wellness by holding community events and meetings.
+          Snail Mail provides equitable access to bullet journaling,
+          letter-writing, and scrapbooking supplies for all.
           <br></br>
           <br></br>
-          We hold weekly meetings on Mondays from 7-9 PM in Friedman 101, open to all students at Brown and RISD. Come join us!
+          We hold weekly meetings on Mondays from 7-9 PM in Friedman 101, open
+          to all students at Brown and RISD. Come join us!
         </Text>
         <Button
           variant="solid"

@@ -1,20 +1,7 @@
-import React, { useRef } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-  Image,
-  Link,
-} from "@chakra-ui/react";
+import { Button, Grid, GridItem, Text, Image, Link } from "@chakra-ui/react";
 import { HiArrowCircleRight } from "react-icons/hi";
-import { useNavigate } from "react-router-dom";
 
 export default function PenPal() {
-  const navigate = useNavigate();
-
   return (
     <Grid
       templateAreas={`"left right"`}
@@ -44,7 +31,11 @@ export default function PenPal() {
           w="90%"
           mb="1rem"
           rightIcon={<HiArrowCircleRight size={"2.5rem"} color={"#8EA6D5"} />}
-          onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScEbq_W02BGKGNn1ZiGpvtl83sfVMVzfLmsi-ZKlqth37tZzw/viewform")}
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/forms/d/e/1FAIpQLScEbq_W02BGKGNn1ZiGpvtl83sfVMVzfLmsi-ZKlqth37tZzw/viewform",
+            )
+          }
         >
           Sign Up Here!
         </Button>
@@ -54,15 +45,22 @@ export default function PenPal() {
           textAlign={"justify"}
           w="90%"
         >
-          Looking for a buddy to write letters to? Join our campus wide pen-pal 
-          program and get paired with another student or faculty member for 
-          letter exchanges! Open to all Brown/RISD grad and undergrad students 
+          Looking for a buddy to write letters to? Join our campus wide pen-pal
+          program and get paired with another student or faculty member for
+          letter exchanges! Open to all Brown/RISD grad and undergrad students
           as well as Brown faculty.
-          <br/>
-          <br/>
+          <br />
+          <br />
         </Text>
         <Text variant="subtitleBig" align="justify" color="#5F6061">
-          Already have a pen-pal? Let us know how it's going! Fill out this <Link variant="pageLink" href="https://docs.google.com/forms/d/e/1FAIpQLSdQPZ_MZZVMvpm3oqFDgmDyKsC_ga8f4CmOaCjI-ueTjwRNzA/viewform">check-in form</Link> to give us feedback on how you and your pen-pal are doing!
+          Already have a pen-pal? Let us know how it's going! Fill out this{" "}
+          <Link
+            variant="pageLink"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdQPZ_MZZVMvpm3oqFDgmDyKsC_ga8f4CmOaCjI-ueTjwRNzA/viewform"
+          >
+            check-in form
+          </Link>{" "}
+          to give us feedback on how you and your pen-pal are doing!
         </Text>
       </GridItem>
       <GridItem area={"right"} alignItems={"center"} justifyContent="center">

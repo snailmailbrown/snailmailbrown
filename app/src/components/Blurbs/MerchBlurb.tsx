@@ -1,14 +1,4 @@
-import React, { useRef } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-  Image,
-} from "@chakra-ui/react";
-import { HiArrowCircleRight } from "react-icons/hi";
+import { Button, Grid, GridItem, Text, Image } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 export default function MerchBlurb() {
@@ -37,8 +27,10 @@ export default function MerchBlurb() {
           Want to rep your love of Snail Mail wherever you go?
           <br></br>
           <br></br>
-          Exciting news! We have official Snail Mail merch! Each collection features hand drawn graphics from our wonderful Art Directors, and rumor has it they're itching to make some new designs. We may
-          be launching a new collection very soon...
+          Exciting news! We have official Snail Mail merch! Each collection
+          features hand drawn graphics from our wonderful Art Directors, and
+          rumor has it they're itching to make some new designs. We may be
+          launching a new collection very soon...
         </Text>
         <Button
           variant="solid"

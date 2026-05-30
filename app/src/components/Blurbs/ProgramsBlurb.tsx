@@ -1,14 +1,4 @@
-import React, { useRef } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-  Image,
-} from "@chakra-ui/react";
-import { HiArrowCircleRight } from "react-icons/hi";
+import { Button, Grid, GridItem, Text, Image } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 export default function Programs() {
@@ -45,7 +35,7 @@ export default function Programs() {
           bg="#E8CEC1"
           color="#473A32"
           _hover={{
-            bg: "#cfaa98ff"
+            bg: "#cfaa98ff",
           }}
           m="2rem"
           onClick={() => navigate("/programs")}
@@ -112,7 +102,7 @@ export default function Programs() {
           bg="#473A32"
           color="#FAF1E6"
           _hover={{
-            bg: "#7d5b4aff"
+            bg: "#7d5b4aff",
           }}
           m="2rem"
           onClick={() => navigate("/programs")}

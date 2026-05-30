@@ -1,14 +1,24 @@
-import React, { useState } from "react";
-import { Text, Link, Grid, GridItem, Image, Flex, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, IconButton } from "@chakra-ui/react";
-import Eboard from "./Eboard";
+import { useState } from "react";
+import {
+  Text,
+  Link,
+  Grid,
+  GridItem,
+  Image,
+  Flex,
+  Modal,
+  ModalContent,
+  ModalOverlay,
+  IconButton,
+} from "@chakra-ui/react";
 import { gallery } from "../info/galleryinfo";
 import { HiX } from "react-icons/hi";
 
 export default function Gallery() {
-    const [expand, setExpand] = useState(-1)
-    const onImageClick = (idx: number) => {
-        setExpand(idx)
-    }
+  const [expand, setExpand] = useState(-1);
+  const onImageClick = (idx: number) => {
+    setExpand(idx);
+  };
   return (
     <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
       <Flex
@@ -25,7 +35,14 @@ export default function Gallery() {
           ( click to expand a picture! )
         </Text>
         <Text variant="subtitle" color="#5F6061">
-          follow us on instagram <Link variant="pageLink" href="https://www.instagram.com/snailmailbrown?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@snailmailbrown</Link> to see even more!
+          follow us on instagram{" "}
+          <Link
+            variant="pageLink"
+            href="https://www.instagram.com/snailmailbrown?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          >
+            @snailmailbrown
+          </Link>{" "}
+          to see even more!
         </Text>
       </Flex>
       <Flex
@@ -34,26 +51,31 @@ export default function Gallery() {
         flexDir={"row"}
         flexWrap={"wrap"}
       >
-      <Grid templateColumns="repeat(auto-fill, minmax(200px, 1fr))" gap={8} w="65%" my="2rem">
-        {gallery.map((m, idx) => (
-          <GridItem>
-            <Image
-              objectFit="cover"
-              w="100%"
-              src={m.pic}
-              borderRadius={"1rem"}
-              aspectRatio={1 / 1}
-              border={"2px solid #D9D9D9"}
-              onClick={() => onImageClick(idx)}
-              cursor={"pointer"}
-            />
-          </GridItem>
-        ))}
-      </Grid>
+        <Grid
+          templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
+          gap={8}
+          w="65%"
+          my="2rem"
+        >
+          {gallery.map((m, idx) => (
+            <GridItem>
+              <Image
+                objectFit="cover"
+                w="100%"
+                src={m.pic}
+                borderRadius={"1rem"}
+                aspectRatio={1 / 1}
+                border={"2px solid #D9D9D9"}
+                onClick={() => onImageClick(idx)}
+                cursor={"pointer"}
+              />
+            </GridItem>
+          ))}
+        </Grid>
       </Flex>
       <Modal
         isOpen={expand >= 0}
-        onClose={() => expand == -1}
+        onClose={() => setExpand(-1)}
         onOverlayClick={() => setExpand(-1)}
         isCentered
         size="6xl"

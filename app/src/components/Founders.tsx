@@ -1,23 +1,13 @@
-import React, { useState } from "react";
-import { Text, Grid, GridItem, Image, Flex, Card, Button } from "@chakra-ui/react";
+import { useState } from "react";
+import { Grid, GridItem, Image } from "@chakra-ui/react";
 import EboardBio from "./EboardBio";
 import { originalEboard } from "../info/foundersinfo";
-
-const profilePics = [
-  "/images/grey.png",
-  "/images/white.png",
-  "/images/white.png",
-  "/images/white.png",
-  "/images/white.png",
-  "/images/white.png",
-  "/images/white.png",
-];
 export default function About() {
-    const [activeMember, setActiveMember] = useState(0)
+  const [activeMember, setActiveMember] = useState(0);
 
-   const imageClick = (idx: number) => {
-     setActiveMember(idx)
-   };  
+  const imageClick = (idx: number) => {
+    setActiveMember(idx);
+  };
   return (
     <Grid
       templateAreas={`"left right"`}
