@@ -13,10 +13,9 @@ import { HiArrowCircleRight } from "react-icons/hi";
 export default function CalendarBlurb() {
   return (
     <Grid
-      templateAreas={{ base: `"left" "right"`, md: `"left right"` }}
-      gridTemplateColumns={{ base: "1fr", md: "1fr 1fr" }}
-      h={{ base: "auto", md: "93vh" }}
-      py={{ base: "2rem", md: 0 }}
+      templateAreas={`"left right"`}
+      gridTemplateColumns={"1fr 1fr"}
+      h="93vh"
       w="100%"
       alignItems={"center"}
     >
@@ -28,10 +27,9 @@ export default function CalendarBlurb() {
       >
         <Image
           objectFit="cover"
-          h={{ base: "auto", md: "30rem" }}
-          w={{ base: "90vw", md: "40rem" }}
+          h="30rem"
+          w="40rem"
           src="/images/snailmail/social_1.png"
-          borderRadius={{ base: "1rem", md: 0 }}
         />
       </GridItem>
       <GridItem
@@ -40,12 +38,11 @@ export default function CalendarBlurb() {
         alignItems={"center"}
         justifyContent="center"
         flexDir={"column"}
-        px={{ base: "1rem", md: 0 }}
       >
         <Text variant="subHeader" color="#303030" lineHeight={"90%"} mb="2rem">
           meetings <br></br>+ events
         </Text>
-        <Text variant="subtitle" color="#303030" w={{ base: "85%", md: "50%" }} mb="2rem">
+        <Text variant="subtitle" color="#303030" w="50%" mb="2rem">
           We have lots of exciting events planned for you this year!
           Be sure to save the date, so you don't miss out on the fun!
         </Text>

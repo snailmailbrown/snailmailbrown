@@ -17,15 +17,14 @@ export default function PenPal() {
 
   return (
     <Grid
-      templateAreas={{ base: `"right" "left"`, md: `"left right"` }}
-      gridTemplateColumns={{ base: "1fr", md: "1fr 1.1fr" }}
-      h={{ base: "auto", md: "93vh" }}
+      templateAreas={`"left right"`}
+      gridTemplateColumns={"1fr 1.1fr"}
+      h="93vh"
       w="100%"
-      p={{ base: "1rem", md: "20px" }}
-      pt={{ base: "10vh", md: "20px" }}
+      p="20px"
       alignItems={"center"}
     >
-      <GridItem area={"left"} alignItems={"center"} p={{ base: "2rem", md: "10rem" }}>
+      <GridItem area={"left"} alignItems={"center"} p="10rem">
         <Text variant={"bigHeader"} color="#8EA6D5" lineHeight={"85%"}>
           Pen-Pals
         </Text>
@@ -42,10 +41,10 @@ export default function PenPal() {
           justifyContent={"space-between"}
           variant="outline"
           pr="0"
-          w={{ base: "100%", md: "90%" }}
+          w="90%"
           mb="1rem"
           rightIcon={<HiArrowCircleRight size={"2.5rem"} color={"#8EA6D5"} />}
-          onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdOZ7SRmvutZKjTMcaF6cc9-BBmHA1HmlxswFhSxinsjurtog/viewform?usp=header")}
+          onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScEbq_W02BGKGNn1ZiGpvtl83sfVMVzfLmsi-ZKlqth37tZzw/viewform")}
         >
           Sign Up Here!
         </Button>
@@ -53,7 +52,7 @@ export default function PenPal() {
           variant={"subtitle"}
           color="#6F6F6F"
           textAlign={"justify"}
-          w={{ base: "100%", md: "90%" }}
+          w="90%"
         >
           Looking for a buddy to write letters to? Join our campus wide pen-pal 
           program and get paired with another student or faculty member for 
@@ -66,16 +65,11 @@ export default function PenPal() {
           Already have a pen-pal? Let us know how it's going! Fill out this <Link variant="pageLink" href="https://docs.google.com/forms/d/e/1FAIpQLSdQPZ_MZZVMvpm3oqFDgmDyKsC_ga8f4CmOaCjI-ueTjwRNzA/viewform">check-in form</Link> to give us feedback on how you and your pen-pal are doing!
         </Text>
       </GridItem>
-      <GridItem 
-        area={"right"} 
-        alignItems={"center"} 
-        justifyContent="center"
-        display="flex"
-      >
+      <GridItem area={"right"} alignItems={"center"} justifyContent="center">
         <Image
           objectFit="contain"
-          maxHeight={{ base: "40vh", md: "60%" }}
-          maxWidth={{ base: "80%", md: "80%" }}
+          maxHeight="60%"
+          maxWidth="80%"
           src="/images/snailmail/penpal.png"
           borderRadius={"1rem"}
         />

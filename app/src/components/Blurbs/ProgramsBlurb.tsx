@@ -16,10 +16,9 @@ export default function Programs() {
 
   return (
     <Grid
-      templateAreas={{ base: `"left" "right"`, md: `"left right"` }}
-      gridTemplateColumns={{ base: "1fr", md: "1fr 1fr" }}
-      h={{ base: "auto", md: "93vh" }}
-      py={{ base: "2rem", md: 0 }}
+      templateAreas={`"left right"`}
+      gridTemplateColumns={"1fr fr"}
+      h="93vh"
       w="100%"
       alignItems={"center"}
       bg={"#FFF2EF"}
@@ -30,16 +29,14 @@ export default function Programs() {
         alignItems={"center"}
         justifyContent="center"
         flexDir={"column"}
-        px={{ base: "1rem", md: 0 }}
-        pb={{ base: "2rem", md: 0 }}
       >
         <Text variant="subHeader" color="#473A32">
           campus pen-pals
         </Text>
         <Image
           objectFit="cover"
-          h={{ base: "35vh", md: "40vh" }}
-          w={{ base: "50vw", md: "20vw" }}
+          h="40vh"
+          w="20vw"
           src="/images/snailmail/eboard_christmas_2.png"
           borderTopRadius={"46%"}
         />
@@ -55,7 +52,7 @@ export default function Programs() {
         >
           Check it out!
         </Button>
-        <Text variant="subtitle" color="#6D5B51" w={{ base: "85%", md: "50%" }}>
+        <Text variant="subtitle" color="#6D5B51" w="50%">
           Looking for someone to exchange letters with? Sign up for our
           campus-wide pen-pal program! Open to all Brown/RISD students and
           faculty.
@@ -71,8 +68,6 @@ export default function Programs() {
         alignItems={"center"}
         flexDirection={"column"}
         justifyContent="center"
-        px={{ base: "1rem", md: 0 }}
-        pt={{ base: "2rem", md: 0 }}
       >
         <Text
           variant={"subHeader"}
@@ -85,34 +80,33 @@ export default function Programs() {
         <Image
           objectFit="contain"
           w="90%"
-          mr={{ base: 0, md: "-8rem" }}
-          mt={{ base: "-1rem", md: "-3rem" }}
+          mr="-8rem"
+          mt="-3rem"
           src="/images/star_divider_brown.png"
         />
-        <Flex
+        <GridItem
+          area={"right"}
           display="flex"
           alignItems={"center"}
           justifyContent="center"
-          flexDir={{ base: "column", md: "row" }}
         >
           <Image
             objectFit="cover"
-            h={{ base: "60vw", md: "35%" }}
-            w={{ base: "60vw", md: "35%" }}
+            h="35%"
+            w="35%"
             margin="10px"
             src="/images/snailmail/vsa_collab.jpg"
             borderRadius="2%"
-            display={{ base: "none", md: "block" }}
           />
           <Image
             objectFit="cover"
-            h={{ base: "60vw", md: "35%" }}
-            w={{ base: "60vw", md: "35%" }}
+            h="35%"
+            w="35%"
             margin="10px"
             src="/images/snailmail/visions_collab.jpg"
             borderRadius="2%"
           />
-        </Flex>
+        </GridItem>
         <Button
           variant="solid"
           bg="#473A32"

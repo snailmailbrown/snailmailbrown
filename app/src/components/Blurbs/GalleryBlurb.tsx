@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Button,
   ButtonGroup,
@@ -23,25 +23,37 @@ const samplepics = [
 ];
 export default function GalleryBlurb() {
     const [index, setIndex] = useState(1)
+    const [front, setFront] = useState(2)
+    const [back, setBack] = useState(0)
+    const [isChanged, setChanged] = useState(0)
     const navigate = useNavigate();
-    const len = samplepics.length;
 
-    // Calculate back and front indices with proper wrapping
-    const back = (index - 1 + len) % len;
-    const front = (index + 1) % len;
+    useEffect(() => {
+        
+        index + 1 == samplepics.length ? setFront(0) : setFront(index + 1);
+        back < 0 ? setBack(samplepics.length - 1) : setBack(index - 1);
+        console.log("front:" + front + "back:" + back);
+    }, [isChanged])
 
     function forward(){
-        setIndex((prev) => (prev + 1) % len);
+        setIndex(index + 1)
+        if (index >= samplepics.length) {
+          setIndex(0)
+        }
+        console.log('done:' + index)
+        setChanged(isChanged + 1)
     }
-    
     function backward() {
-      setIndex((prev) => (prev - 1 + len) % len);
+      setIndex(index - 1);
+      if (index < 0) {
+        setIndex(samplepics.length - 1);
+      }
+      setChanged(isChanged - 1);
     }
 
   return (
     <Flex
-      h={{ base: "auto", md: "93vh" }}
-      py={{ base: "3rem", md: 0 }}
+      h="93vh"
       w="100%"
       alignItems={"center"}
       justifyContent={"center"}
@@ -60,32 +72,26 @@ export default function GalleryBlurb() {
           onClick={backward}
         ></IconButton>
 
-        {/* Back image - hidden on mobile */}
         <Image
           objectFit="cover"
           h="20rem"
           w="25rem"
           src={samplepics[back]}
           mr="-10rem"
-          display={{ base: "none", md: "block" }}
         />
-        {/* Center image - responsive size */}
         <Image
           objectFit="cover"
-          h={{ base: "18rem", md: "25rem" }}
-          w={{ base: "80vw", md: "32rem" }}
+          h="25rem"
+          w="32rem"
           src={samplepics[index]}
           zIndex="1"
-          borderRadius={{ base: "1rem", md: 0 }}
         />
-        {/* Front image - hidden on mobile */}
         <Image
           objectFit="cover"
           h="20rem"
           w="25rem"
           src={samplepics[front]}
           ml="-10rem"
-          display={{ base: "none", md: "block" }}
         />
         <IconButton
           icon={<HiChevronRight size={"4rem"} fill="#8EA6D5" />}

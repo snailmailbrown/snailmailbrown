@@ -14,13 +14,9 @@ import { HiArrowCircleRight } from "react-icons/hi";
 export default function Forms() {
   return (
     <Grid
-      templateAreas={{ 
-        base: `"left" "center" "right"`,  // Mobile: left text, image, right text
-        md: `"left center right"` 
-      }}
-      gridTemplateColumns={{ base: "1fr", md: "1.5fr 1fr 1fr" }}
-      h={{ base: "auto", md: "93vh" }}
-      py={{ base: "2rem", md: 0 }}
+      templateAreas={`"left center right"`}
+      gridTemplateColumns={"1.5fr 1fr 1fr"}
+      h="93vh"
       w="100vw"
       alignItems={"center"}
       bg={"#AABBDC"}
@@ -32,7 +28,6 @@ export default function Forms() {
         alignItems={"center"}
         justifyContent="center"
         flexDir={"column"}
-        px={{ base: "1rem", md: 0 }}
       >
         <Text
           variant="subHeader"
@@ -58,7 +53,7 @@ export default function Forms() {
             snailmail@brown.edu
           </Link>
         </Text>
-        <Text variant="subtitle" color="#FFFFFF" w={{ base: "85%", md: "50%" }} mb="2rem">
+        <Text variant="subtitle" color="#FFFFFF" w="50%" mb="2rem">
           Previous collaborations include a lofi study session with VSA, a
           Valentine's Day collab with Birbs@Brown, postcard writing with VISIONS
           Magazine, journaling with LGBTQ Center, scrapbooking with Mosaic+, and
@@ -86,13 +81,26 @@ export default function Forms() {
         </Text>
       </GridItem>
       <GridItem
+        area={"center"}
+        display="flex"
+        alignItems={"center"}
+        justifyContent="center"
+      >
+        <Image
+          objectFit="cover"
+          h="90%"
+          w="90%"
+          margin="10px"
+          src="/images/snailmail/eboard_social_1.jpg"
+          borderRadius="2%"
+        />
+      </GridItem>
+      <GridItem
         area={"right"}
         display="flex"
         alignItems={"center"}
         justifyContent="center"
         flexDir={"column"}
-        px={{ base: "1rem", md: 0 }}
-        py={{ base: "2rem", md: 0 }}
       >
         <Text
           variant="tinyHeader"
@@ -103,7 +111,7 @@ export default function Forms() {
         >
           have feedback or ideas for meetings?
         </Text>
-        <Text variant="subtitle" color="#FFFFFF" w={{ base: "85%", md: "50%" }} mb="2rem">
+        <Text variant="subtitle" color="#FFFFFF" w="50%" mb="2rem">
           Let us know any meeting ideas you have, any stationery you want to
           see, any questions, or if you just wanna leave a note by filling out
           this
@@ -116,22 +124,6 @@ export default function Forms() {
           </Link>{" "}
           !
         </Text>
-      </GridItem>
-      <GridItem
-        area={"center"}
-        display="flex"
-        alignItems={"center"}
-        justifyContent="center"
-        py={{ base: "2rem", md: 0 }}
-      >
-        <Image
-          objectFit="cover"
-          h={{ base: "auto", md: "90%" }}
-          w={{ base: "80vw", md: "90%" }}
-          margin="10px"
-          src="/images/snailmail/eboard_social_1.jpg"
-          borderRadius="2%"
-        />
       </GridItem>
     </Grid>
   );

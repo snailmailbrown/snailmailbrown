@@ -10,13 +10,12 @@ import {
 } from "@chakra-ui/react";
 import { HiArrowCircleRight } from "react-icons/hi";
 
-export default function LaunchTwo() {
+export default function LaunchOne() {
   return (
     <Grid
-      templateAreas={{ base: `"left" "right"`, md: `"left right"` }}
-      gridTemplateColumns={{ base: "1fr", md: "3fr 1.5fr" }}
-      h={{ base: "auto", md: "93vh" }}
-      py={{ base: "2rem", md: 0 }}
+      templateAreas={`"left right"`}
+      gridTemplateColumns={"3fr 1.5fr"}
+      h="93vh"
       w="100vw"
       alignItems={"center"}
       bg={"#8EA6D5"}
@@ -28,8 +27,6 @@ export default function LaunchTwo() {
         alignItems={"center"}
         justifyContent="center"
         flexDir={"column"}
-        px={{ base: "1rem", md: 0 }}
-        pt={{ base: "2rem", md: 0 }}
       >
         <Text variant="subHeader" align={"center"} color="white" lineHeight={"90%"} mb="2rem">
           snail mail <br></br> merch <br></br> launch 2.0
@@ -37,7 +34,7 @@ export default function LaunchTwo() {
         <Text variant="tinyHeader" align={"center"} color="white" lineHeight={"90%"} mb="2rem">
           so popular we had to make more!
         </Text>
-        <Text variant="subtitle" color="white" w={{ base: "85%", md: "50%" }} mb="2rem">
+        <Text variant="subtitle" color="white" w="50%" mb="2rem">
         Last year our merch featured not one but TWO items available for purchase! You guys wanted a Snail Mail tote bag, so obviously we had to make one. 
         <br />
         <br />
@@ -49,22 +46,20 @@ export default function LaunchTwo() {
         display="flex"
         alignItems={"center"}
         justifyContent="center"
-        flexDir={{ base: "row", md: "row" }}
-        gap={{ base: "0.5rem", md: 0 }}
       >
         <Image
           objectFit="cover"
-          h={{ base: "auto", md: "90%" }}
-          w={{ base: "45%", md: "45%" }}
-          margin={{ base: 0, md: "10px" }}
+          h="90%"
+          w="45%"
+          margin="10px"
           src="/images/snailmail/tote_bag.png"
           borderRadius="2%"
         />
         <Image
           objectFit="cover"
-          h={{ base: "auto", md: "90%" }}
-          w={{ base: "45%", md: "40%" }}
-          margin={{ base: 0, md: "10px" }}
+          h="90%"
+          w="40%"
+          margin="10px"
           src="/images/snailmail/sweatshirt_back.png"
           borderRadius="2%"
         />
