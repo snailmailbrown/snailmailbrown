@@ -91,6 +91,9 @@ const polaroids: PolaroidInfo[] = [
     pic: "/images/snailmail/eb_2026.jpg",
   },
   {
+    pic: "/images/snailmail/tina_moms.jpg",
+  },
+  {
     pic: "/images/snailmail/og_babysnails.jpg",
   },
   {
