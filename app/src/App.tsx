@@ -1,9 +1,9 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-// import "./styles/global.css";
-// import "./styles/responsive.css";
-// import "./styles/switch.css";
+import "./styles/global.css";
+import "./styles/responsive.css";
+import "./styles/switch.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import customTheme from "./styles/theme";
 import About from "./components/About";

@@ -13,14 +13,14 @@ import {
 } from "@chakra-ui/react";
 import { polaroids } from "../info/polaroidinfo";
 import { HiX } from "react-icons/hi";
-// import "../styles/animations.css";
+import "../styles/animations.css";
 
 export default function Polaroids() {
   const [expand, setExpand] = useState(-1);
   
-  // const onImageClick = (idx: number) => {
-  //   setExpand(idx);
-  // };
+  const onImageClick = (idx: number) => {
+    setExpand(idx);
+  };
   return (
     <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"} pt={{ base: "10vh", md: 0 }}>
       <Flex
@@ -69,9 +69,9 @@ export default function Polaroids() {
                 src={m.pic}
                 borderRadius={"1rem"}
                 border={"2px solid #D9D9D9"}
-                // cursor={"pointer"}
-                // onClick={() => onImageClick(idx)}
-                // className="polaroid-wiggle"
+                cursor={"pointer"}
+                onClick={() => onImageClick(idx)}
+                className="polaroid-wiggle"
               />
             </GridItem>
           ))}

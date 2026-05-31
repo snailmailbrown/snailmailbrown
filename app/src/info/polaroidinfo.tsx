@@ -84,6 +84,21 @@ const polaroids: PolaroidInfo[] = [
   {
     pic: "/images/snailmail/four_4.jpg",
   },
+  {
+    pic: "/images/snailmail/new_eb.jpg",
+  },
+  {
+    pic: "/images/snailmail/eb_2026.jpg",
+  },
+  {
+    pic: "/images/snailmail/og_babysnails.jpg",
+  },
+  {
+    pic: "/images/snailmail/eb_2025.jpg",
+  },
+  {
+    pic: "/images/snailmail/anna_tuyet.jpg",
+  },
 ];
 
 export { polaroids };
