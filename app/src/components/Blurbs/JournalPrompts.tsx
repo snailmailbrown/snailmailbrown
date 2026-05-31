@@ -44,18 +44,16 @@ export default function JournalPrompts() {
           src="/images/star_divider_blue.png"
         />
         <Text variant="subtitleBig" w={{ base: "90%", md: "50%" }} color="#000000">
-          - What was your favorite summer memory? Make a collage of your summer
-          adventures!
+          - What summer plans are you most looking forward to? Make a summer bucket list!
           <br />
           <br />
-          - What's something you're really looking forward to this school year?
+          - Write a letter to a friend over the summer!
           <br />
           <br />
-          - What are 3 goals you have for the semester? Try to think of one
-          that's academic, one that's just for fun, and one that's a personal
-          goal!
+          - Reflect on your favorite memories from the school year. What were the ups and downs? What goals do you have for the next year?
           <br />
-          <br />- Make a vision board for the 2025-2026 school year!
+          <br />
+          - Make a vision board for the best summer ever!
         </Text>
       </GridItem>
     </Grid>
