@@ -3,9 +3,10 @@ import { Grid, GridItem, Text, Image } from "@chakra-ui/react";
 export default function LaunchOne() {
   return (
     <Grid
-      templateAreas={`"left right"`}
-      gridTemplateColumns={"1.5fr 3fr"}
-      h="93vh"
+      templateAreas={{ base: `"right" "left"`, md: `"left right"` }}
+      gridTemplateColumns={{ base: "1fr", md: "1.5fr 3fr" }}
+      h={{ base: "auto", md: "93vh" }}
+      py={{ base: "2rem", md: 0 }}
       w="100vw"
       alignItems={"center"}
       bg={"#FFEEDA"}
@@ -17,6 +18,8 @@ export default function LaunchOne() {
         alignItems={"center"}
         justifyContent="center"
         flexDir={"column"}
+        px={{ base: "1rem", md: 0 }}
+        pt={{ base: "2rem", md: 0 }}
       >
         <Text
           variant="subHeader"
@@ -36,7 +39,7 @@ export default function LaunchOne() {
         >
           sold out !
         </Text>
-        <Text variant="subtitle" color="#303030" w="50%" mb="2rem">
+        <Text variant="subtitle" color="#303030" w={{ base: "85%", md: "50%" }} mb="2rem">
           Two years ago we launched our very first piece of snail mail
           merchandise with our cozy custom sweaters. The design is hand-drawn by
           one of our former Art Directors, Sienna Lew, and features a bullet
@@ -49,20 +52,22 @@ export default function LaunchOne() {
         display="flex"
         alignItems={"center"}
         justifyContent="center"
+        flexDir={{ base: "row", md: "row" }}
+        gap={{ base: "0.5rem", md: 0 }}
       >
         <Image
           objectFit="cover"
-          h="90%"
-          w="40%"
-          margin="10px"
+          h={{ base: "auto", md: "90%" }}
+          w={{ base: "45%", md: "40%" }}
+          margin={{ base: 0, md: "10px" }}
           src="/images/snailmail/merch_2.png"
           borderRadius="2%"
         />
         <Image
           objectFit="cover"
-          h="90%"
-          w="50%"
-          margin="10px"
+          h={{ base: "auto", md: "90%" }}
+          w={{ base: "45%", md: "50%" }}
+          margin={{ base: 0, md: "10px" }}
           src="/images/snailmail/merch_3.png"
           borderRadius="2%"
         />

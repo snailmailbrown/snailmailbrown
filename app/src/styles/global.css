@@ -1,5 +1,9 @@
 /*
-RESET SETTINGS */
+RESET SETTINGS 
+
+IMPORTANT: Ensure index.html has the viewport meta tag:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+This is required for mobile responsiveness to work properly. */
 
 /* set border-box (so that css uses a
 more reasonable box model, and so it’s

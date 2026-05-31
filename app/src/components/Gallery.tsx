@@ -20,13 +20,14 @@ export default function Gallery() {
     setExpand(idx);
   };
   return (
-    <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
+    <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"} pt={{ base: "10vh", md: 0 }}>
       <Flex
         alignItems={"flex-start"}
         justifyContent={"center"}
         flexDir={"column"}
-        h="40vh"
-        w="65%"
+        h={{ base: "auto", md: "40vh" }}
+        w={{ base: "90%", md: "65%" }}
+        py={{ base: "2rem", md: 0 }}
       >
         <Text variant="subHeader" color="#5F6061">
           gallery
@@ -50,15 +51,16 @@ export default function Gallery() {
         justifyContent={"center"}
         flexDir={"row"}
         flexWrap={"wrap"}
+        w="100%"
       >
-        <Grid
-          templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
-          gap={8}
-          w="65%"
-          my="2rem"
-        >
+      <Grid 
+        templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(auto-fill, minmax(200px, 1fr))" }} 
+        gap={{ base: 4, md: 8 }} 
+        w={{ base: "95%", md: "65%" }} 
+        my="2rem"
+      >
           {gallery.map((m, idx) => (
-            <GridItem>
+            <GridItem key={idx}>
               <Image
                 objectFit="cover"
                 w="100%"
@@ -78,31 +80,64 @@ export default function Gallery() {
         onClose={() => setExpand(-1)}
         onOverlayClick={() => setExpand(-1)}
         isCentered
-        size="6xl"
+        size={{ base: "full", md: "6xl" }}
       >
-        <ModalOverlay />
+        <ModalOverlay bg="blackAlpha.800" />
         <ModalContent
-          p="0"
-          m="0"
-          alignItems="flex-end"
+          p={{ base: "1rem", md: 0 }}
+          m={0}
+          alignItems={{ base: "center", md: "flex-end" }}
           bg="transparent"
-          dropShadow={"none"}
+          boxShadow="none"
+          maxW={{ base: "100vw", md: "6xl" }}
+          maxH={{ base: "100vh", md: "auto" }}
         >
           <IconButton
             bg="transparent"
             p="0"
             m="0"
             w="50px"
-            _hover={{ bg: "transparent", color: "transparent" }}
+            position={{ base: "absolute", md: "relative" }}
+            top={{ base: "1rem", md: "auto" }}
+            right={{ base: "1rem", md: "auto" }}
+            zIndex={10}
+            _hover={{ bg: "transparent" }}
             _active={{
               bg: "transparent",
               transform: "scale(0.98)",
             }}
             icon={<HiX size={"2rem"} color="white" />}
             onClick={() => setExpand(-1)}
-            aria-label={""}
+            aria-label={"Close"}
           ></IconButton>
+          {/* Mobile Layout - just the image, nearly full width */}
+          <Flex
+            display={{ base: "flex", md: "none" }}
+            w="100%"
+            h="100vh"
+            alignItems="center"
+            justifyContent="center"
+            flexDir="column"
+            onClick={() => setExpand(-1)}
+          >
+            <Image
+              src={gallery[expand]?.pic}
+              objectFit="contain"
+              maxW="95vw"
+              maxH="80vh"
+              borderRadius="1rem"
+            />
+            <Text variant="tinyHeader" color="white" mt="1rem" textAlign="center">
+              {gallery[expand]?.title}
+            </Text>
+            <Text variant="subtitle" color="white" textAlign="center" px="1rem">
+              {gallery[expand]?.caption}
+            </Text>
+          </Flex>
+
+          {/* Desktop Layout - grid with image and caption side by side */}
           <Grid
+            display={{ base: "none", md: "grid" }}
             templateAreas={`"left right"`}
             gridTemplateColumns={"3fr 1.5fr"}
             h="70vh"

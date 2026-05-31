@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Flex, Text, Image, IconButton } from "@chakra-ui/react";
+import { Button, Flex, Text, Image, IconButton, useMediaQuery } from "@chakra-ui/react";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 
@@ -14,6 +14,7 @@ const samplepics = [
 export default function GalleryBlurb() {
   const [index, setIndex] = useState(1);
   const navigate = useNavigate();
+  const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
 
   const front = index === samplepics.length - 1 ? 0 : index + 1;
   const back = index === 0 ? samplepics.length - 1 : index - 1;
@@ -27,54 +28,70 @@ export default function GalleryBlurb() {
 
   return (
     <Flex
-      h="93vh"
+      h={{ base: "auto", md: "93vh" }}
+      py={{ base: "3rem", md: 0 }}
       w="100%"
-      alignItems={"center"}
-      justifyContent={"center"}
-      display={"flex"}
-      flexDir={"column"}
+      alignItems="center"
+      justifyContent="center"
+      display="flex"
+      flexDir="column"
     >
-      <Text variant="subHeader" color="#303030" mb="2rem">
+      <Text variant="subHeader" color="#303030" mb="2rem" fontSize={isLargerThan768 ? "4rem" : "2rem"}>
         gallery
       </Text>
-      <Flex justifyContent={"center"} alignItems={"center"} mb="2rem">
-        <IconButton
-          icon={<HiChevronLeft size={"4rem"} fill="#8EA6D5" />}
-          aria-label={""}
-          bg="transparent"
-          _hover={{ bg: "none" }}
-          onClick={backward}
-        ></IconButton>
-
+      {isLargerThan768 ? (
+        <Flex justifyContent="center" alignItems="center" mb="2rem">
+          <IconButton
+            icon={<HiChevronLeft size="4rem" fill="#8EA6D5" />}
+            aria-label=""
+            bg="transparent"
+            _hover={{ bg: "none" }}
+            onClick={backward}
+          />
+          {/* Back image - hidden on mobile */}
+          <Image
+            objectFit="cover"
+            h="20rem"
+            w="25rem"
+            src={samplepics[back]}
+            mr="-10rem"
+            display={{ base: "none", md: "block" }}
+          />
+          {/* Center image - responsive size */}
+          <Image
+            objectFit="cover"
+            h={{ base: "18rem", md: "25rem" }}
+            w={{ base: "80vw", md: "32rem" }}
+            src={samplepics[index]}
+            zIndex="1"
+            borderRadius={{ base: "1rem", md: 0 }}
+          />
+          {/* Front image - hidden on mobile */}
+          <Image
+            objectFit="cover"
+            h="20rem"
+            w="25rem"
+            src={samplepics[front]}
+            ml="-10rem"
+            display={{ base: "none", md: "block" }}
+          />
+          <IconButton
+            icon={<HiChevronRight size="4rem" fill="#8EA6D5" />}
+            aria-label=""
+            bg="transparent"
+            _hover={{ bg: "none" }}
+            onClick={forward}
+          />
+        </Flex>
+      ) : (
         <Image
           objectFit="cover"
           h="20rem"
-          w="25rem"
-          src={samplepics[back]}
-          mr="-10rem"
-        />
-        <Image
-          objectFit="cover"
-          h="25rem"
-          w="32rem"
+          w="80vw"
           src={samplepics[index]}
-          zIndex="1"
+          mb="2rem"
         />
-        <Image
-          objectFit="cover"
-          h="20rem"
-          w="25rem"
-          src={samplepics[front]}
-          ml="-10rem"
-        />
-        <IconButton
-          icon={<HiChevronRight size={"4rem"} fill="#8EA6D5" />}
-          aria-label={""}
-          bg="transparent"
-          _hover={{ bg: "none" }}
-          onClick={forward}
-        ></IconButton>
-      </Flex>
+      )}
       <Button
         variant="solid"
         bg="#303030"

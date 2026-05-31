@@ -4,30 +4,34 @@ import Founders from "./Founders";
 
 export default function About() {
   return (
-    <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
+    <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"} pt={{ base: "10vh", md: 0 }}>
       <Flex
         alignItems={"center"}
         justifyContent={"space-between"}
-        h="60vh"
-        w="65%"
+        flexDir={{ base: "column", md: "row" }}
+        h={{ base: "auto", md: "60vh" }}
+        w={{ base: "90%", md: "65%" }}
+        py={{ base: "2rem", md: 0 }}
       >
         <Text variant="subHeader" color="#5F6061" lineHeight={"90%"}>
           about <br></br>snail mail
         </Text>
         <Image
           objectFit="cover"
-          h="20rem"
-          w="20rem"
+          h={{ base: "15rem", md: "20rem" }}
+          w={{ base: "15rem", md: "20rem" }}
           src="/images/abouticon.png"
         />
       </Flex>
       <Flex
         alignItems={"center"}
         justifyContent={"space-evenly"}
+        flexDir={{ base: "column", md: "row" }}
         pb="3rem"
-        w="75%"
+        w={{ base: "90%", md: "75%" }}
+        gap={{ base: "2rem", md: 0 }}
       >
-        <Flex flexDir={"column"} w="25%" alignItems={"center"}>
+        <Flex flexDir={"column"} w={{ base: "100%", md: "25%" }} alignItems={"center"}>
           <Text variant="tinyHeader" mb="2rem" color="#5F6061">
             Beginnings
           </Text>
@@ -44,7 +48,7 @@ export default function About() {
             vision was brought to life with Snail Mail @ Brown!
           </Text>
         </Flex>
-        <Flex flexDir={"column"} w="25%" alignItems={"center"}>
+        <Flex flexDir={"column"} w={{ base: "100%", md: "25%" }} alignItems={"center"}>
           <Text variant="tinyHeader" mb="2rem" color="#5F6061">
             Growth
           </Text>
@@ -60,7 +64,7 @@ export default function About() {
             to grow as a community.
           </Text>
         </Flex>
-        <Flex flexDir={"column"} w="25%" alignItems={"center"}>
+        <Flex flexDir={"column"} w={{ base: "100%", md: "25%" }} alignItems={"center"}>
           <Text variant="tinyHeader" mb="2rem" color="#5F6061">
             Mission
           </Text>
@@ -83,7 +87,7 @@ export default function About() {
         alignItems={"center"}
         justifyContent={"space-evenly"}
         pb="3rem"
-        w="75%"
+        w={{ base: "95%", md: "75%" }}
         flexDir={"column"}
         my="2rem"
       >
@@ -96,7 +100,7 @@ export default function About() {
         alignItems={"center"}
         justifyContent={"space-evenly"}
         pb="3rem"
-        w="75%"
+        w={{ base: "95%", md: "75%" }}
         flexDir={"column"}
         my="2rem"
       >

@@ -1,0 +1,236 @@
+/* Mobile-first responsive design */
+/* Breakpoints: mobile (0-768px), tablet (768px-1024px), desktop (1024px+) */
+
+/* ===== GENERAL SPACING ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* ===== HOME PAGE & SECTIONS ===== */
+/* Fixed height sections should be auto on mobile */
+@media (max-width: 768px) {
+  /* Remove tall vh heights and use auto */
+  [class*="vh"] {
+    min-height: auto;
+  }
+
+  /* Make container widths full or responsive */
+  [style*="w=\"65%\""],
+  [style*="w=\"75%\""],
+  [style*="w=\"85%\""],
+  [style*="w=\"90%\""] {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+}
+
+/* ===== GRID LAYOUTS - STACK ON MOBILE ===== */
+@media (max-width: 768px) {
+  /* Two-column grids become single column */
+  [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Template areas reset to single area */
+  [style*="templateAreas"] {
+    grid-template-areas: "area" !important;
+  }
+
+  /* Fixed heights become auto */
+  [style*="h=\"93vh\""],
+  [style*="h=\"70vh\""],
+  [style*="h=\"60vh\""],
+  [style*="h=\"40vh\""] {
+    height: auto !important;
+  }
+
+  /* Padding reduction on mobile */
+  [style*="p=\"10rem\""] {
+    padding: 1.5rem !important;
+  }
+
+  [style*="p=\"20px\""] {
+    padding: 1rem !important;
+  }
+}
+
+/* ===== IMAGES - RESIZE ON MOBILE ===== */
+@media (max-width: 768px) {
+  /* Large fixed image dimensions */
+  img[style*="w=\"30vw\""],
+  img[style*="w=\"25rem\""],
+  img[style*="w=\"20vw\""],
+  img[style*="w=\"32rem\""],
+  img[style*="h=\"70vh\""],
+  img[style*="h=\"25rem\""] {
+    width: 70vw !important;
+    height: auto !important;
+  }
+
+  /* Carousel images */
+  img[style*="h=\"20rem\""],
+  img[style*="h=\"25rem\""],
+  img[style*="w=\"25rem\""],
+  img[style*="w=\"32rem\""] {
+    max-width: 60vw !important;
+    height: auto !important;
+  }
+
+  /* Overlay margins that cause overlaps */
+  img[style*="mr=\"-10rem\""],
+  img[style*="ml=\"-10rem\""] {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  img[style*="mr=\"-8rem\""] {
+    margin-right: 0 !important;
+  }
+}
+
+/* ===== FLEX LAYOUTS ===== */
+@media (max-width: 768px) {
+  /* Force column direction on mobile */
+  [style*="flexDir=\"row\""] {
+    flex-direction: column !important;
+  }
+
+  /* Adjust flex gaps */
+  [style*="gap="] {
+    gap: 1rem !important;
+  }
+
+  /* Justify content adjustments */
+  [style*="justifyContent=\"space-between\""],
+  [style*="justifyContent=\"space-evenly\""] {
+    justify-content: center !important;
+  }
+}
+
+/* ===== TEXT & BUTTONS ===== */
+@media (max-width: 768px) {
+  /* Button widths */
+  button[style*="w=\"90%\""] {
+    width: 100% !important;
+  }
+
+  /* Text widths */
+  span[style*="w=\"50%\""],
+  span[style*="w=\"25%\""],
+  p[style*="w=\"50%\""],
+  p[style*="w=\"25%\""] {
+    width: 100% !important;
+  }
+
+  /* Icon sizes reduce */
+  svg {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+}
+
+/* ===== NAVBAR ===== */
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem !important;
+  }
+
+  nav a {
+    font-size: 0.5rem !important;
+    padding: 0.25rem !important;
+  }
+
+  nav [style*="px"] {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+
+/* ===== GALLERY & CAROUSELS ===== */
+@media (max-width: 768px) {
+  /* Hide carousel overlays */
+  img[style*="ml=\"-10rem\""],
+  img[style*="mr=\"-10rem\""] {
+    display: none !important;
+  }
+
+  /* Grid columns for galleries */
+  [style*="minmax(200px"],
+  [style*="minmax(270px"] {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
+  }
+
+  /* Gallery gaps */
+  [style*="gap=8"] {
+    gap: 0.5rem !important;
+  }
+}
+
+/* ===== EBOARDS ===== */
+@media (max-width: 768px) {
+  /* Eboard layouts from 2-column to 1-column */
+  [style*="gridTemplateColumns=\"1fr 4fr\""] {
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+  }
+
+  /* Eboard images - make scrollable horizontal instead of vertical */
+  [style*="flexDir=\"column\""][style*="overflowY"] {
+    flex-direction: row !important;
+    overflow-y: visible !important;
+    overflow-x: auto !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  /* Bio container */
+  [style*="h=\"100%\""] {
+    height: auto !important;
+    padding: 1rem !important;
+  }
+}
+
+/* ===== MODAL ===== */
+@media (max-width: 768px) {
+  /* Modal full screen on mobile */
+  [role="dialog"] {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+
+  /* Modal grid stacks */
+  [style*="gridTemplateColumns=\"3fr 1.5fr\""] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Tablet adjustments (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Slightly larger mobile adjustments */
+  [style*="w=\"65%\""],
+  [style*="w=\"75%\""],
+  [style*="w=\"85%\""] {
+    width: 85% !important;
+  }
+
+  /* Reduce padding a bit */
+  [style*="p=\"10rem\""] {
+    padding: 3rem !important;
+  }
+}
+
+/* Ensure images don't overflow */
+@media (max-width: 768px) {
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* Override max-width constraints */
+  img[style*="maxWidth"] {
+    max-width: 100% !important;
+  }
+}

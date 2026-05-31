@@ -3,9 +3,10 @@ import { Grid, GridItem, Text, Image } from "@chakra-ui/react";
 export default function JournalPrompts() {
   return (
     <Grid
-      templateAreas={`"left right"`}
-      gridTemplateColumns={"1fr 1fr"}
-      h="93vh"
+      templateAreas={{ base: `"left" "right"`, md: `"left right"` }}
+      gridTemplateColumns={{ base: "1fr", md: "1fr 1fr" }}
+      h={{ base: "auto", md: "93vh" }}
+      py={{ base: "2rem", md: 0 }}
       w="100%"
       alignItems={"center"}
     >
@@ -17,8 +18,8 @@ export default function JournalPrompts() {
       >
         <Image
           objectFit="cover"
-          h="70vh"
-          w="30vw"
+          h={{ base: "50vh", md: "70vh" }}
+          w={{ base: "60vw", md: "30vw" }}
           src="/images/snailmail/julie_emily_wen.jpg"
           borderTopRadius={"46%"}
         />
@@ -29,6 +30,8 @@ export default function JournalPrompts() {
         flexDirection={"column"}
         alignItems={"center"}
         justifyContent="center"
+        px={{ base: "1rem", md: 0 }}
+        pb={{ base: "2rem", md: 0 }}
       >
         <Text variant="subHeader" color="#000000">
           journal prompts
@@ -36,11 +39,11 @@ export default function JournalPrompts() {
         <Image
           objectFit="contain"
           w="90%"
-          mr="-8rem"
-          mt="-3rem"
+          mr={{ base: 0, md: "-8rem" }}
+          mt={{ base: "-1rem", md: "-3rem" }}
           src="/images/star_divider_blue.png"
         />
-        <Text variant="subtitleBig" w="50%" color="#000000">
+        <Text variant="subtitleBig" w={{ base: "90%", md: "50%" }} color="#000000">
           - What was your favorite summer memory? Make a collage of your summer
           adventures!
           <br />
